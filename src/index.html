@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bse.css"/>
+		<link rel="stylesheet" type="text/css" href="foot/iconfont.css"/>
+	</head>
+	<body>
+		<div id="head">
+			
+		</div>
+		<!--banner图片-->
+		<div class="banner_img">
+			<div id="banner">
+				<ul>
+					<li class="ul_li">
+						<a href="#"><img src="img/pc2018040813432956175.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/pc2018061116141666378.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/pc2018061417014727009.jpg"/></a>
+					</li>
+				</ul>
+				<div id="suoying">
+					<!--<div class="div2"></div>
+					<div></div>
+					<div></div>-->
+				</div>
+			</div>
+		</div>
+		<!--主体图片-->
+		<div id="cont">
+			<div class="list">
+
+		     </div>
+		</div>
+		
+		
+		<!--模板克隆特惠-->
+			<script type="text/html" id="list_template">			
+						{{each list prod}}
+							<div class="span_img">
+								<a href="#">
+									<img src="{{prod.img}}"/>
+								</a>
+							</div>
+								
+						{{/each}}
+			</script>
+			<!--当季热卖-->
+			<div class="section">
+				<div id="section_shaoma">
+					<img src="img/shaoma1.gif" / class="saoyisao">
+					<img src="img/qrcode-close.png"/ class="guanbi">
+				</div>
+				<div class="section-title">
+                    <p class="cn">当季热卖</p>
+                    <p class="en">BEST CHOICE</p>
+                </div>
+                <div id="section_content">
+                	
+                </div>
+			</div>
+			<div id="content_foot">
+				<a href="#" class="content_img"><img src="/img/pic3.jpg"/></a>
+				<a href="#" class="content_img"><img src="/img/pic1.jpg"/></a>
+				<a href="#" class="content_img"><img src="/img/pic2.jpg"/></a>
+			</div>
+			<!--模板克隆主体热卖-->
+			<script type="text/html" id="content">
+				{{each list prod}}
+					<div class="section_group">
+						<div class="img">
+							<a href="#"><img src="{{prod.img}}"/></a>		
+						</div>
+						<div class="text">
+							<p class="desc">{{prod.desc}}</p>
+							<p class="name">
+								<span class="name_en">{{prod.en}}</span>
+								<span class="name_cn">{{prod.cn}}</span>
+							</p>
+							<p class="attr">{{prod.attr}}</p>
+							<a href="#" class="gouwuche"><img src="{{prod.gouwu}}"/></a>
+						</div>
+					</div>
+				{{/each}}
+			</script>
+		<!--尾部-->
+		<div id="footer">
+			
+		</div>
+		<script src="lib/requirejs/require.js" data-main="js/men"></script>
+		 <!--<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+    	 <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    	 <script src="lib/artTemplate/template-web.js"></script>
+    	 <script src="js/headandfoot.js"></script>-->
+    	 <!--<script src="js/men.js"></script>-->
+	</body>
+</html>

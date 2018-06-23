@@ -1,0 +1,85 @@
+Git
+	http://www.runoob.com/git/git-tutorial.html
+	分布式版本控制系统，不必服务器端软件支持。
+	概念：
+		版本库：.git
+		工作区：项目目录
+		暂存区：.git 目录中 index 文件
+	使用：
+		a. 安装
+		b. 全局配置
+			git config --global user.name "runoob"
+			git config --global user.email "test@runoob.com"
+
+		以下操作在项目目录下进行(git bash)：
+		c. 初始化版本库
+			git init
+				-- 初始化，生成一个 .git 的隐藏目录
+			git status
+				-- 查看版本库状态信息
+		d. 将未被跟踪的资源添加到暂存区
+			git add <file>
+				git add .
+				如果有不需要被跟踪资源（需要被忽略的资源），创建 .gitignore 文件：
+				touch .gitignore
+				在生成的 .gitignore 文件中写入需要被忽略的资源
+		e. 将暂存区的资源提交到本地版本库
+			git commit -m "版本信息"
+			git log
+				-- 查看版本日志信息
+		f. 分支管理
+			git branch 
+				-- 查看所有分支
+			git branch <branch-name>
+				-- 创建分支
+			git checkout <branch-name>
+				-- 切换分支
+			git merge <branch-name>
+				-- 合并分支
+			git branch -d <branch-name>
+				-- 删除分支
+		g. 远程仓库
+			github -- 基于git的代码托管平台
+				1. 注册、登录
+				2. 生成SSH Key
+					ssh-keygen -t rsa -C "youremail@example.com"
+					系统用户目录中生成 .ssh  文件夹，id_rsa 是私钥文件，id_rsa.pub 是公钥文件 
+				3. 在 github 上配置 ssh key
+					个人设置中添加 ssh key
+				4. 为了验证是否成功，输入以下命令：
+					ssh -T git@github.com
+				5. 在 github 上创建远程仓库
+				6. 推送本地仓库到远程 github
+					git remote add origin git@github.com:itrainhub/h5_1803_test.git     -- 配置和远程仓库的连接
+					git push -u origin master   -- 将本地仓库推送到远程仓库
+
+git 使用流程：
+	1. 本地生成 SSH key，在 github 配置ssh key
+	
+	2. 第一次使用，本地没有源码：
+		git clone url
+			-- 下载远程仓库中源码，url指定的是源码的版本库URL
+		非第一次使用，本地有源码：
+		git pull
+			-- 将远程仓库中的源码更新到本地
+	3. 在工作区中实现编码（修改、添加、删除）
+	4. 在完成一个完整功能并通过测试后：
+		git add .
+			-- 添加到暂存区
+		git commit -m '消息'
+			-- 提交到本地版本库
+	5. 将本地仓库推送到远程仓库
+		git push
+
+
+
+
+
+
+注册
+登录
+首页
+列表
+详情
+购物车
+确认订单

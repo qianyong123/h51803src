@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#head").load("/wamp/www/dangao/html/include/head.html",function(){$(".nav_li").mouseenter(function(){$(this).children(".ul1").show()}),$(".nav_li").mouseleave(function(){$(this).children(".ul1").hide()}),$(".ul1").hover(function(){$(this).show()})}),$("#footer").load("/wamp/www/dangao/html/include/foot.html")});

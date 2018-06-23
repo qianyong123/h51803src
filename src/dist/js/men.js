@@ -1,0 +1,1 @@
+"use strict";$(function(){$.getJSON("/wamp/www/dangao/mock/list.json",function(s){var a=template("list_template",{list:s.res_body.list});console.log(s),$(".list").html(a),$(".span_img:eq(0)").addClass("span_img1"),$(".span_img:eq(1)").addClass("span_img3"),$(".span_img:eq(3)").addClass("span_img2"),$("body").on("click","a",function(s){s.preventDefault(),console.log(22)})})});
