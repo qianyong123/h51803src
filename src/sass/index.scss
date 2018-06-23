@@ -132,6 +132,41 @@ $width:1208px;
 	position: absolute;
 	bottom: 20px;
 	right:0;
+	 .gou_dizhi{
+            width: 290px;
+            height: 181px;
+            position: absolute;
+            top:40px;
+            right: 0;
+            z-index:999;
+            background: white;
+            border: 1px solid  #e9546b;
+            display: none;
+            .bcg{
+                background-color: #e9546b;
+            }
+            p{
+                line-height: 60px;
+                margin-left: 18px;
+            }
+            li{
+                display: inline-block;
+                float: left;
+                width: 50px;
+                height: 25px;
+                margin: 0 0 15px 17px;
+                line-height: 25px;
+                text-align:center;
+                border-radius: 2px;
+                cursor: pointer;
+                color: black;
+                font-size:12px;
+                padding: 0;
+                &:hover{
+                    background-color: #e9546b;
+                }
+            }
+       }
 	.gou_img{
 	    position: relative;
 	    padding:0 40px;
@@ -149,11 +184,27 @@ $width:1208px;
 	    }
 	}
 }
-#header #gouwu li{
+#header .gouwu_ul li{
+    position: relative;
 	float: left;
 	color: white;
 	padding: 0 24px;
 	border-left: 1px solid white;
+	.a_span{
+        display: inline-block;
+        height:16px;
+        width: 16px;
+        background: white;
+        position: absolute;
+        top:-11px;
+        left: 42px;
+        border:1px solid white;
+        border-radius:16px;
+        text-align: center;
+        line-height: 16px;
+        font-size: 12px;
+        color: #e9546b;
+    }
 }
 #header #gouwu li:last-of-type{
 	border-right: 1px solid white;
@@ -163,6 +214,7 @@ $wid:1263px;
     width: 100%;
     border-bottom: 2px solid #dfe0e2;
     overflow: hidden;
+    cursor: pointer;
 }
 #banner{
 	position: relative;
@@ -201,6 +253,7 @@ $wid:1263px;
 	position: absolute;
 	bottom: 0;
 	left: 545px;
+	
 }
 #banner #suoying .div2{
 	background: #e9546b;
@@ -306,6 +359,155 @@ $wid:1263px;
 	margin-right:12px;
 	margin-bottom: 10px;
 	padding: 1px;
+	position: relative;
+	#detail{
+	    position: absolute;
+	    width: 291px;
+	    height: 291px;
+	    top:291px;
+	    left:0px;
+	    z-index: 999;
+	    background-image:url(/img/img_preloading.gif);
+//	    display: none;
+//	    opacity: 0.8;
+        #xx{
+            width: 15px;
+            height:15px;
+            position: absolute;
+//          padding: 5px;
+            top: 15px;
+            right: 15px;
+            background:url(/img/tb5.png);
+            cursor: pointer;
+            img{
+               width: 15px;
+                height:15px; 
+            }
+        }
+	    .detail_top{
+	        padding-top: 36px;
+            margin: 0 auto;
+            width: 200px;
+            height: 66px;
+            p{
+                margin: 0 auto;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+                background-color: #e9546a;
+                border-radius: 2px;
+            }
+	    }
+	    .detail_bottom{
+//	        width: 261px;
+	        padding:0 15px;
+	        margin-top: 20px;
+	        .goumai{
+	            margin: 0 auto;
+	            width: 200px;
+	            a{
+	                display: inline-block;
+	                width: 90px;
+	                height: 30px;
+	                line-height: 30px;
+	                text-align: center;
+	                color: white;
+	                background-color: #e9546a;
+                    border-radius: 2px;
+	                font-size: 14px;
+	                float: left;
+	             
+	            }
+	            a:first-of-type{
+	                margin-right: 20px;
+	            }
+	        }
+	        .gouwushu{
+	            width: 200px;
+	            padding-top: 18px;
+	            padding-bottom:10px;
+	            margin:0 auto;
+	            overflow: hidden;
+	            a:first-of-type{
+	                display:inline-block;
+	                width: 25px;
+	                height: 25px;
+	                background:url(/img/jj.png);
+	                background-size:25px;
+	                float: left;
+	            }
+	            a:last-of-type{
+	                display:inline-block;
+                    width: 25px;
+                    height: 25px;
+                    background: url(/img/tb4.png);
+                    float: left;
+	            }
+	            span{
+	                float: left;
+                    width: 56px;
+                    height: 26px;
+                    line-height: 26px;
+                    text-align: center;
+                    border-radius: 2px;
+                    color: #fff;
+                    background-color: #e9546b;
+                    margin-right: 10px;
+	            }
+	            #jiage{
+	                display: inline-block;
+	                float: left;
+                    width: 54px;
+                    height: 24px;
+                    margin: 0 10px;
+                    line-height: 24px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #000;
+                    border: 1px solid #b4b4b4;
+                    border-radius: 2px;
+	            }
+	        }
+	        li{
+	            padding-left: 18px;
+                line-height: 22px;
+                font-size: 12px;
+                color: #000;
+                position: relative;
+                i{
+                    width: 8px;
+                    height: 8px;
+                    background: black;
+                    border-radius: 8px;
+                    position: absolute;
+                    top:6px;
+                    left: 0;
+                }
+	        }
+	        .span1{
+	            margin:0 auto;
+	            margin-bottom: 12px;
+	            .span_bcg{
+	                background:url(/img/tb9.png) no-repeat 33px 0;
+	                 border: 1px solid #F02B63;
+	                 color: #F02B63;
+	            }
+	            span{
+	                height:20px;
+	                margin:0 0 10px 10px;
+	                border: 1px solid;
+	                line-height:20px;
+	                padding:0 8px;
+	                text-align: center;
+	                cursor: pointer;
+	               
+	            }
+	        }
+	    }
+	}
 }
 .section .section_group:hover{
 	/*border:1px solid #F02B63;*/
