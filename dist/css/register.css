@@ -1,0 +1,208 @@
+#page_register {
+  width: 100%;
+  position: relative;
+}
+
+#page_register .pp {
+  margin: 5px 0 5px 10px;
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+#page_register .zhuche {
+  width: 1208px;
+  padding: 80px 0 160px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#page_register .zhuche .page_img {
+  width: 573px;
+  height: 359px;
+  float: left;
+  margin: 86px 0 0 48px;
+}
+
+#page_register .zhuche .page_input {
+  width: 579px;
+  height: 520px;
+  float: left;
+  border-left: 1px solid #c8c8c8;
+}
+
+#page_register .zhuche .page_input ul {
+  width: 392px;
+  padding-left: 98px;
+}
+
+#page_register .zhuche .page_input ul \
+a {
+  text-decoration: none;
+}
+
+#page_register .zhuche .page_input ul #rsg {
+  font-size: 40px;
+  line-height: 32px;
+  color: #d6dce2;
+  text-align: center;
+  width: 392px;
+}
+
+#page_register .zhuche .page_input ul #btn-zhuche {
+  display: block;
+  width: 390px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 18px 0 4px;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+  background: #45515f;
+  color: white;
+  text-decoration: none;
+}
+
+#page_register .zhuche .page_input ul #btn-zhuche:hover {
+  text-decoration: underline;
+}
+
+#page_register .zhuche .page_input ul .yiyou {
+  color: #505050;
+  height: 30px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#page_register .zhuche .page_input ul .yiyou .denglu {
+  color: #1478be;
+}
+
+#page_register .zhuche .page_input ul .yiyou .denglu:hover {
+  text-decoration: underline;
+}
+
+#page_register .zhuche .page_input ul input {
+  width: 390px;
+  height: 50px;
+  background: #fafafa;
+  border: 1px solid #929ead;
+  border-radius: 4px;
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 50px;
+  color: #505050;
+  text-indent: 1em;
+}
+
+#page_register .zhuche .page_input ul .dongtaimima {
+  width: 392px;
+  height: 72px;
+}
+
+#page_register .zhuche .page_input ul .dongtaimima #dongtai {
+  float: left;
+  width: 260px;
+}
+
+#page_register .zhuche .page_input ul .dongtaimima #huoqu_dongtai {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  float: right;
+  width: 122px;
+  height: 52px;
+  background: #959ead;
+  border-radius: 4px;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 52px;
+  text-decoration: none;
+  color: white;
+}
+
+.page_ul {
+  width: 392px;
+  padding: 54px 0 0 98px;
+}
+
+.page_ul #btn-login {
+  display: block;
+  width: 390px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 40px 0 5px;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+  background: #45515f;
+  color: white;
+}
+
+.page_ul .haomacuowu, .page_ul .shuruhaoma {
+  font-size: 12px;
+  color: red;
+  display: none;
+  margin-left: 10px;
+}
+
+.denglufangshi {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 75px;
+}
+
+.denglufangshi img {
+  display: block;
+  float: left;
+  margin: 0 3px;
+}
+
+.yaosi_denglu {
+  display: none;
+}
+
+.ul2 {
+  width: 392px;
+  padding: 54px 0 0 98px;
+  display: none;
+}
+
+.ul2 #btn2 {
+  display: block;
+  width: 390px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 0 0 5px;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+  background: #45515f;
+  color: white;
+}
+
+.ul2 .p1 {
+  text-align: right;
+  width: 382px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 12px;
+}
+
+.ul2 .p1 #aa {
+  color: #1478be;
+}
+
+.ul2 .p1 #aa:hover {
+  text-decoration: underline;
+}
+
+.ul2 .haomacuowu, .ul2 .shuruhaoma {
+  font-size: 12px;
+  color: red;
+  display: none;
+  margin-left: 10px;
+}

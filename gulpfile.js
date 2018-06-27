@@ -65,7 +65,8 @@ gulp.task("watch", function(){
 	gulp.watch("src/sass/*.scss", ["sass"]);
 	gulp.watch("src/**/*.html",["html"]);
 	gulp.watch("src/js/**/*.js",["js"]);
-	gulp.watch("src/img/**/*.*",["img"]);
+	gulp.watch("src/img/**/*.*",["copy-img"]);
+	gulp.watch("src/mock/**/*.*",["copy-mock"]);
 });
 gulp.task("copy",["copy-lib","copy-img","copy-mock"]);
 gulp.task("default",["html","sass","connect","watch","copy","js"]);

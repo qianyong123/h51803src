@@ -1,4 +1,4 @@
-define(["jquery"],function($){
+define(["jquery","cookie"],function($){
 	$(function(){
 		$("#head").load("/html/include/head.html",function(){
 				//	var timer=0;
@@ -6,9 +6,6 @@ define(["jquery"],function($){
 					$(this).children(".ul1").show();
 				});
 				$(".nav_li").mouseleave(function(){
-			//		timer = setTimeout(()=>{
-			//				$(this).children(".ul1").hide();
-			//			}, 300);
 							$(this).children(".ul1").hide();
 				});
 				$(".ul1").hover(function(){
@@ -24,6 +21,23 @@ define(["jquery"],function($){
 	            	$("#gouwu .songdizhi").html(html);
 	            	$(".gou_dizhi").hide();
 	            });
+	            
+	            //导航下拉菜单
+				$(".nav_li").hover(function(){
+						$(".nav_li .xia").hide();
+						$(".nav_li .shang").show();
+					},function(){
+						$(".nav_li .xia").show();
+						$(".nav_li .shang").hide();
+				});
+				//读取cookie里的数量
+				//头部购物数量
+				$.cookie.json=true;
+				var shu=$.cookie("products").lenght;
+				if(shu===undefined){
+					$(".a_span").text(0);
+				}else				
+				$(".a_span").text(shu);				
 		})
 		$("#footer").load("/html/include/foot.html");
 	});

@@ -1,0 +1,190 @@
+//register.html CSS样式
+#page_register{
+    width: 100%;
+    position: relative;
+    .pp{
+        margin:5px 0 5px 10px;
+        font-size: 12px;
+         color: red;
+         display: none; 
+    }
+    .zhuche{
+        width: 1208px;
+        padding:80px 0 160px;
+        margin: 0 auto;
+        overflow: hidden;
+        .page_img{
+            width: 573px;
+            height: 359px;
+            float: left;
+            margin:86px 0 0 48px;
+        }
+        .page_input{
+            width: 579px;
+            height: 520px;
+            float: left;
+            border-left: 1px solid #c8c8c8;
+            ul{
+                width: 392px;
+                padding-left: 98px;\
+//              overflow: hidden
+                a{
+                    text-decoration: none;
+//                  color: white;
+                }
+                #rsg{
+                    font-size: 40px;
+                    line-height: 32px;
+                    color: #d6dce2;
+                    text-align:center;
+                    width: 392px;
+                }
+                #btn-zhuche{
+                    display: block;
+                    width: 390px;
+                    height: 50px;
+                    border-radius: 4px;
+                    margin:18px 0 4px;
+                    font-size: 20px;
+                    line-height:52px;
+                    text-align: center;
+                    background: #45515f;
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+            
+                .yiyou{
+                    color: #505050;
+                    height: 30px;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    line-height: 30px;
+                        .denglu{
+                            color: #1478be;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                input{
+                    width: 390px;
+                    height: 50px;
+                    background:#fafafa;
+                    border:1px solid #929ead;
+                    border-radius: 4px;
+                    margin-top:18px;
+                    font-size: 18px;
+                    line-height: 50px;
+                    color: #505050;
+                    text-indent: 1em;
+//                  float: left;
+                }
+                .dongtaimima{
+                    width: 392px;
+                    height: 72px;
+                     #dongtai{
+                        float: left;
+                        width: 260px;
+                        }
+                    #huoqu_dongtai{
+                        padding: 0;
+                        margin: 0;
+                        display:block;
+                        text-align: center;            
+                        float:right;
+                        width: 122px;
+                        height: 52px;
+                        background: #959ead;
+                        border-radius: 4px;
+                        margin-top: 18px;
+                        font-size: 16px;
+                        line-height: 52px;
+                        text-decoration: none;
+                        color: white;                      
+                     }
+                }
+               
+            }
+        }
+    }
+}
+//login.html CSS样式
+.page_ul{
+    width: 392px;
+    padding: 54px 0 0 98px;
+    #btn-login{
+            display: block;
+            width: 390px;
+            height: 50px;
+            border-radius: 4px;
+            margin:40px 0 5px;
+            font-size: 20px;
+            line-height:52px;
+            text-align: center;
+            background: #45515f;
+            color: white;
+    }
+    .haomacuowu,.shuruhaoma{
+        font-size: 12px;
+        color: red;
+        display: none;
+        margin-left: 10px;
+    }
+}
+//登录方式
+.denglufangshi{
+    position: absolute;
+    top: 50px;
+    right:50px;
+    height: 75px;
+    img{
+        display: block;
+        float: left;
+        margin:0 3px;
+    }
+    
+}
+//用户登录默认隐藏
+.yaosi_denglu{
+    display: none;
+}
+//用户名/密码登录
+.ul2{
+    width: 392px;
+    padding: 54px 0 0 98px;
+    display: none;
+    #btn2{
+        display: block;
+        width: 390px;
+        height: 50px;
+        border-radius: 4px;
+        margin:0 0 5px;
+        font-size: 20px;
+        line-height:52px;
+        text-align: center;
+        background: #45515f;
+        color: white;
+    }
+    .p1{
+        text-align: right;
+        width: 382px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+        #aa{
+            color:#1478be;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+     .haomacuowu,.shuruhaoma{
+        font-size: 12px;
+        color: red;
+        display: none;
+        margin-left:10px;
+    }
+}

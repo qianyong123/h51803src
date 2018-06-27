@@ -1,214 +1,63 @@
 $width:1208px;
 /*头部*/
-#head{
+.zheban{
     width: 100%;
-    background: #e9546b;
-}
-#header{
-	height: 100px;
-	width:$width;
-	position: relative;
-	margin:auto;
-}
-#header a{
-	text-decoration: none;
-	color: white;
-}
-/*logo*/
-#logo{
-	margin-top: 30px;
-	float: left;
-	padding-right: 50px;
-	padding-left: 20px;
-}
-/*导航*/
-#nav{
-	float: left;
-	margin-top:56px;
-	width: 557px;
-	height: 24px;
-	position: relative;
-    .bcg{
+    height:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: #F0F0F0;
+    opacity:0.8;
+    z-index:555;
+    display:none;
+    .popups {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 440px;
+        height: 294px;
+        margin: -200px 0 0 -222px;
+//      display: none;
+        background-color: #fff;
+        border: 2px solid #e9546b;
+        border-radius: 8px;
         float: left;
-        font-size: 14px;
-        height:24px;
-        width: 88px;
-        line-height: 24px;
-        text-align: center;
-        border-radius:2px;
-        margin:0 2px;
-        padding: 1px;
-    }
-     .li1{
-    background: white;
-    }
-}
-#nav li:hover{
-	background: white;
-}
-.nav_li{
-    position: relative;
-    .shang{
-        display: none;
-    }
-    .xia{
-        position: absolute;
-        top: 10px;
-        right: 5px;
-    }
-    .shang{
-        position: absolute;
-        top: 10px;
-        right: 5px;
-    }
-}
-#nav .bcg>a{
-	display: inline-block;
-	width: 86px;
-	height: 22px;
-	/*padding: 0 22px;*/
-	color:white;
-	text-decoration: none;
-	background: #e9546b;
-}
-/*导航的下拉菜单*/
-#nav .ul1{
-	display: none;
-	position: relative;
-	z-index: 100;
-	padding-top:16px;
-	/*border:1px solid black;*/
-}
-#nav .img_tehui{
-	position: absolute;
-	top: -6px;
-	left: 244px;
-}
-#nav .ul1 li{
-	border: 0;
-	background:white;
-	width: 150px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	border-left:1px solid #e9546b;
-	border-right:1px solid #e9546b;
-	border-bottom: 1px solid #CCCCCC;
-	position:relative;
-}
-#nav .ul1 li:last-child{
-	border-bottom:1px solid #e9546b;
-}
-#nav .ul1 li a{
-	color:#000000;
-}
-#nav .ul1 li:hover{
-	background: #ff748b;
-}
-#header #daima{
-	position: absolute;
-	top: 5px;
-	right: 0;
-}
-#header #daima p{
-	float:right;
-	color: white;
-}
-#header #daima .p1{
-	margin-right: 80px;
-}
-#header #daima a{
-	padding:0 20px;
-	color: white;
-	&:hover{
-	    text-decoration: underline;
-	}
-}
-#header #daima a:last-of-type{
-	padding-right: 0;
-	border-left:1px solid white;
-}
-#header #gouwu{
-	position: absolute;
-	bottom: 20px;
-	right:0;
-	 .gou_dizhi{
-            width: 290px;
-            height: 181px;
-            position: absolute;
-            top:40px;
-            right: 0;
-            z-index:999;
-            background: white;
-            border: 1px solid  #e9546b;
-            display: none;
-            .bcg{
-                background-color: #e9546b;
-            }
-            p{
-                line-height: 60px;
-                margin-left: 18px;
-            }
-            li{
+        z-index: 666;
+        .btns{
+                height: 60px;
+                width:100%;
+                a{
                 display: inline-block;
+                width: 218px;
+                height: 60px;
+                font-size: 18px;
+                line-height: 60px;
+                text-align: center;
+                color: #fff;
                 float: left;
-                width: 50px;
-                height: 25px;
-                margin: 0 0 15px 17px;
-                line-height: 25px;
-                text-align:center;
-                border-radius: 2px;
-                cursor: pointer;
-                color: black;
-                font-size:12px;
-                padding: 0;
-                &:hover{
-                    background-color: #e9546b;
-                }
             }
-       }
-	.gou_img{
-	    position: relative;
-	    padding:0 40px;
-	    .shang{
-	        position: absolute;
-	        top: 8px;
-	        right:20px;
-	        display: none;
-	    }
-	    .xia{
-	         position: absolute;
-            top: 8px;
-            right:20px;
-	        display: block;
-	    }
-	}
-}
-#header .gouwu_ul li{
-    position: relative;
-	float: left;
-	color: white;
-	padding: 0 24px;
-	border-left: 1px solid white;
-	.a_span{
-        display: inline-block;
-        height:16px;
-        width: 16px;
-        background: white;
-        position: absolute;
-        top:-11px;
-        left: 42px;
-        border:1px solid white;
-        border-radius:16px;
-        text-align: center;
-        line-height: 16px;
-        font-size: 12px;
-        color: #e9546b;
+            .btn1{
+                background:indianred;
+            }
+            .btn2{
+                background-color: red;
+            }     
+        }
+    
+        .popup-info {
+            width: 100%;
+            height: 30px;
+            height: 230px;
+            font-size: 18px;
+            line-height:230px;
+            text-align: center;
+//          background:#F2DEDE;
+            color: black;
+            font-weight:700;
+        }
     }
 }
-#header #gouwu li:last-of-type{
-	border-right: 1px solid white;
-}
+//banner
 $wid:1263px;
 .banner_img{
     width: 100%;
@@ -399,6 +248,7 @@ $wid:1263px;
                 color: #fff;
                 background-color: #e9546a;
                 border-radius: 2px;
+                cursor: pointer;
             }
 	    }
 	    .detail_bottom{
@@ -471,22 +321,28 @@ $wid:1263px;
                     border-radius: 2px;
 	            }
 	        }
-	        li{
-	            padding-left: 18px;
-                line-height: 22px;
-                font-size: 12px;
-                color: #000;
-                position: relative;
-                i{
-                    width: 8px;
-                    height: 8px;
-                    background: black;
-                    border-radius: 8px;
-                    position: absolute;
-                    top:6px;
-                    left: 0;
+	        .ul2,.ul3,.ul4{
+	            display: none;
+	        }
+	        .ul1{
+    	            li{
+                    padding-left: 18px;
+                    line-height: 22px;
+                    font-size: 12px;
+                    color: #000;
+                    position: relative;
+                    i{
+                        width: 8px;
+                        height: 8px;
+                        background: black;
+                        border-radius: 8px;
+                        position: absolute;
+                        top:6px;
+                        left: 0;
+                    }
                 }
 	        }
+	        
 	        .span1{
 	            margin:0 auto;
 	            margin-bottom: 12px;
@@ -577,70 +433,4 @@ $wid:1263px;
 }
 #content_foot .content_img{
 	display:inline-block;
-}
-/*尾部*/
-.footer_link{
-	width: 100%;
-	height:250px;
-	background: #f5f5f5;
-	position:relative;
-}
-.footer_1 .p{
-	margin-left:282px;
-	margin-top: 20px;
-	padding-bottom: 40px;
-	color: #b4b4c4;
-}
-/*联系客服*/
-#lianxi{
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	z-index:999;
-}
-/*尾部的logo*/
-.footer_link #footer_img{
-	padding-top: 90px;
-	margin-left: 90px;
-}
-.footer_link span{
-	font-size: 14px;
-	padding-left: 20px;
-}
-/*尾部的扫码*/
-.footer_link #shaoma{
-	position: absolute;
-	top:44px;
-	right:93px;
-}
-.footer_link #shaoma #img{
-	padding-bottom:10px;
-}
-.footer_link a{
-	display: inline-block;
-	text-decoration: none;
-	color:black;
-	padding:0 14px;
-	border-right: 1px solid black;
-	font-size: 16px;
-}
-.footer_link a:last-of-type{
-	border-right: 0;
-}
-.footer_link a:hover{
-	color:#F02B63;
-}
-.footer_link #links{
-	position:absolute;
-	top: 60px;
-	left: 417px;
-}
-#links p{
-	padding-top: 20px;
-	padding-left: 22px;
-	font-size: 14px;
-	color: #e95480;
-}
-#links p b{
-	font-size: 20px;
 }

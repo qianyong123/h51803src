@@ -1,0 +1,52 @@
+require(["config"],function(){
+	require(["jquery","cookie","load"],function($){
+		//阻止默认行为
+		$("#footer").on("click","a",function(e){
+					 e.preventDefault();
+				});
+		//切换登录方式
+		$(".shouji").click(function(){
+			$(".page_ul").hide();
+			$(".ul2").show();
+			$(".shouji_denglu").hide();
+			$(".yaosi_denglu").show();
+		});
+		$(".yaoshi").click(function(){
+			$(".page_ul").show();
+			$(".ul2").hide();
+			$(".shouji_denglu").show();
+			$(".yaosi_denglu").hide();
+		});
+			//读取cookie里面的数据
+			$.cookie.json=true;
+			const name=$.cookie("username"),
+				  pass=$.cookie("passwodr");
+			//登录验证手机登陆
+		$("#btn-login").click(function(){
+			const val=$("#haoma").val();
+			if(name!=val){
+				$(".ul1-cuowu").show();
+				$(".ul1-chenggong").hide();				
+			}else{
+				$(".ul1-cuowu").hide();
+				$(".ul1-chenggong").show();
+				window.location.href="/index.html";
+				$(".head-zhanghu").text(name);
+			}
+		});
+		//登录验证用户名和密码
+		$("#btn2").click(function(){
+			const zhanhu=$("#haoma2").val(),
+				  mima=$("#password2").val();
+			if(name!=zhanhu&&pass!=mima){
+				$(".ul2-cuowu").show();
+				$(".ul2-chenggong").hide();
+			}else{
+				$(".ul2-cuowu").hide();
+				$(".ul2-chenggong").show();
+				$(".head-zhanghu").text(name);
+				window.location.href="/index.html";
+			}
+		});
+	});
+});

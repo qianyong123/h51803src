@@ -8,9 +8,18 @@
 		<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/bse.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="/css/headandfoot.css"/>
 	</head>
 	<body>
+		<div class="zheban">
+			<div class="popups popup-result" style="display:block;">
+	            <p class="popup-info">您所选的商品已加入购物篮！</p>
+	            <p class="btns clearfix">
+	                <a href="JavaScript:void(0)" class="btn1">再逛逛</a>
+	                <a href="#" class="btn2">去结算</a>
+	            </p>
+          	</div>
+		</div>
 		<div id="head">
 			
 		</div>
@@ -76,9 +85,9 @@
 			<!--模板克隆主体热卖-->
 			<script type="text/html" id="content">
 				{{each list prod}}
-					<div class="section_group">	
+					<div class="section_group" data-id="{{prod.id}}">
 						<div class="img">
-							<a href="#"><img src="{{prod.img}}"/></a>
+							<a href="#" class="list-img"><img src="{{prod.img}}"/ id="list_img"></a>
 							<div id="detail">
 								<div id="xx">
 									
@@ -89,25 +98,43 @@
 								</div>
 								<div class="detail_bottom">
 									<div class="span1">
-										<span class="span_bcg">1.2磅</span>
-										<span>2.2磅</span>
-										<span>3.2磅</span>
-										<span>5.2磅</span>
+										<span class="span_bcg zhong" data-id=0>1.2磅</span>
+										<span class="zhong" data-id=1>2.2磅</span>
+										<span class="zhong" data-id=2>3.2磅</span>
+										<span class="zhong" data-id=3>5.2磅</span>
 									</div>
-									<ul>
-										<li><i></i>14CM*14CM*4.5CM≈6寸,约510g</li>
-										<li><i></i>免费赠送5份餐具</li>
-										<li><i></i>4-5人食用</li>
-									</ul>
+									<div class="uls">
+										 <ul class="ul1">
+											<li><i></i>14CM*14CM*4.5CM≈6寸,约510g</li>
+											<li class="zensong"><i></i>免费赠送5份餐具</li>
+											<li><i></i>4-5人食用</li>
+									 	</ul>
+										<ul class="ul1 ul2">
+											<li><i></i>17.5CM*17.5CM*4.5CM≈8寸,约950g</li>
+											<li class="zensong"><i></i>免费赠送10份餐具</li>
+											<li><i></i>7-8人食用</li>
+										</ul>
+										<ul class="ul1 ul3">
+											<li><i></i>23CM*23CM*4.5CM≈12寸</li>
+											<li class="zensong"><i></i>免费赠送15份餐具</li>
+											<li><i></i>11-12人食用</li>
+										</ul>
+										<ul class="ul1 ul4">
+											<li><i></i>30CM*30CM*4.5CM≈14寸,约2.3kg</li>
+											<li class="zensong"><i></i>免费赠送15份餐具</li>
+											<li><i></i>14-20人食用</li>
+										</ul>
+									</div>
+									
 									<div class="gouwushu">
 										<a href="#" class="jian"></a>
 										<input type="text" id="jiage" value="1" readonly="readonly"/>
-										<span>￥130</span>
+										<span>￥<b style="font-weight:normal;" class="bb">{{prod.jia}}</b></span>
 										<a href="#" class="jia"></a>
 									</div>
 									<div class="goumai">
-										<a href="#">立即购买</a>
-										<a href="#">加入购物车</a>
+										<a href="#" class="confirm">立即购买</a>
+										<a href="#" class="cart">加入购物车</a>
 									</div>
 								</div>
 							</div>
@@ -119,6 +146,9 @@
 								<span class="name_cn">{{prod.cn}}</span>
 							</p>
 							<p class="attr">{{prod.attr}}</p>
+							<div id="attr_jia" style="display: none;">
+								{{prod.jia}}
+							</div>
 							<a href="#" class="gouwuche" id="gouwuche"><img src="{{prod.gouwu}}"/></a>
 						</div>
 					</div>

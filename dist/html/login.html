@@ -3,7 +3,72 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/bse.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/headandfoot.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
 	</head>
 	<body>
+		<div id="head">
+			
+		</div>
+		<div id="page_register">
+			<div class="zhuche">
+				<div class="page_img">
+					<img src="../img/rigister-img.jpg" />
+				</div>
+				<div class="page_input">
+					<div class="denglufangshi shouji_denglu">
+						<img src="/img/dl1.jpg"/>
+						<img src="/img/dl2.jpg" class="shouji"/>
+					</div>
+					<div class="denglufangshi yaosi_denglu">
+						<img src="/img/dl4.png"/>
+						<img src="/img/dl3.png" class="yaoshi" />
+					</div>
+					<ul class="page_ul">
+						<li id="rsg">LOGIN</li>
+						<li class="zhuanghu">
+							<input type="text" id="haoma" placeholder="请输入手机号码" />
+						</li>
+						<li class="dongtaimima">
+							<input type="text" id="dongtai" placeholder="请输入动态码" />
+							<a href="#" id="huoqu_dongtai">获取动态密码</a>
+						</li>						
+						<li>
+							<a href="#" id="btn-login">登录</a>
+						</li>
+						<li>
+							<p class="shuruhaoma">请输入手机号码</p>
+							<p class="haomacuowu">手机号码格式不正确，请重新输入</p>
+							<p class="haomacuowu ul1-cuowu">用户名输入不正确</p>
+							<p class="haomacuowu ul1-chenggong" style="color:green;">登录成功</p>
+							<p class="yiyou">还不是会员？<a href="/html/register.html" class="denglu">手机号注册登录</a></p>
+						</li>
+					</ul>
+					<ul class="ul2">
+						<li id="rsg">LOGIN</li>
+						<li class="li2">
+							<input type="text" id="haoma2" placeholder="请输入用户名或者手机号码" />
+							<input type="password" id="password2" placeholder="请输入密码" />
+							<p class="p1"><a href="#" id="aa">忘记密码</a></p>
+						</li>
+						<li>
+							<a href="#" id="btn2">登录</a>
+						</li>
+						<li class="li2">
+							<p class="shuruhaoma">请输入手机号码</p>
+							<p class="haomacuowu">手机号码格式不正确，请重新输入</p>	
+							<p class="haomacuowu ul2-cuowu">用户名或密码不正确</p>
+							<p class="haomacuowu ul2-chenggong" style="color:green;">登录成功</p>
+							<p class="yiyou">还不是会员？<a href="/html/register.html" class="denglu">手机号注册登录</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script src="/lib/requirejs/require.js" data-main="/js/login"></script>
 	</body>
 </html>

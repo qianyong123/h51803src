@@ -2,8 +2,151 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="/css/bse.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/headandfoot.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
 	</head>
 	<body>
+		<div id="head">
+			
+		</div>
+		<div class="gouwu-head">
+			<h2>SHOPPING&nbsp;BASKET</h2>
+			<p class="yaolan">
+				<span>购物篮</span>
+			</p>
+			<div class="process">
+				<div class="step step1 active">
+					<p>我的购物摇篮</p>
+				</div>
+				<div class="step step2">
+					<p>填写和提价订单信息</p>
+				</div>
+				<div class="step step3">
+					<p>成功提交订单</p>
+				</div>
+				<div class="line line1"></div>
+				<div class="line line2"></div>
+			</div>
+		</div>
+		<div class="list-wrapper">
+			<p class="list-headr">
+				<span class="h-chechall btn-head list-checkall">
+					<i>全选</i>
+				</span>
+				<span class="h-product">商品</span>
+				<span class="h-attr">属性</span>
+				<span class="h-amount">数量</span>
+				<span class="h-spec">规格</span>
+				<span class="h-price">单价</span>
+				<span class="h-privilege">小计</span>
+				<span class="h-operate">操作</span>
+			</p>
+			<div class="content">
+				
+			</div>
+			<div class="list-contenr">
+				<a href="#" class="contenr-img">
+					<img src="/img/empty_basket.png"/>
+				</a>
+			</div>
+			<div class="list-footer">
+				<p class="footer-checkall ">
+					<span class="f-chechall btn-foot list-checkall">全选</span>
+				</p>
+				<div class="footer-contenr">
+					<p class="clearfix">
+						<span class="xuangou">已选<span class="jianshu">0</span>件商品</span>
+						<span class="yuanfeng">(不含运费)</span>
+					</p>
+					<p class="clearfix">
+						<span class="gong">共</span>
+						<span class="qian">￥</span>
+						<span class="zongjia">0.00</span>
+					</p>
+					<a href="#" class="btn-settle">去结算</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/html" id="contenr">
+			{{each products prod}}
+				<ul class="ul1" data-id="{{prod.id}}">
+					<li class="li1">
+						<a href="javascrit:void(0)" class="ul1-chx btn-li"></a>					
+					</li>
+					<li class="li2"><img src="{{prod.img}}" class="conten-img"/></li>
+					<li class="li3">	
+							<p class="p1">{{prod.name}}</p>
+							<p class="p2">{{prod.names}}</p>						
+					</li>
+					<li class="li4">{{prod.zensong}}</li>
+					<li class="li5">
+						<img src="/img/jj.png" class="jian"/>
+						<input type="text" id="shuliang" value="{{prod.amout}}" />
+						<img src="/img/tb4.png" class="jia"/>
+						
+					</li>
+					<li class="li6">
+						{{prod.zhong}}
+					</li>
+					<li class="li7">
+						{{prod.attr}}
+					</li>
+					<li class="xiaoji">
+						{{(prod.amout*prod.jiange).toFixed(2)}}
+					</li>
+					<li id="li8">
+						<a href="javaScrit:vold(0)" class="shuanchu">删除</a>
+					</li>
+				</ul>
+			{{/each}}
+		</script>
+		<!--下面推荐商品-->
+		<div class="part-warpper">
+			<p class="prat-head">餐盘和蜡烛</p>
+			<div class="prat-contenr">
+				<div class="prat-item">
+					<a href="#"><img src="/img/gw1.jpg"/ class="item-img"></a>
+					<div class="text">
+						<p class="text-name">盘叉</p>	
+						<p>cakep&nbsp;late</p>
+						<p class="text-attr">￥2.50&nbsp;/5份</p>
+						<a href="#" class="gouwuche"><img src="/img/gw5.png"/></a>
+					</div>				
+				</div>
+				<div class="prat-item">
+					<a href="#"><img src="/img/gw2.jpg"/ class="item-img"></a>
+					<div class="text">
+						<p class="text-name">数字和蜡烛</p>	
+						<p>number candle</p>
+						<p class="text-attr">￥2.50&nbsp;/5份</p>
+						<a href="#" class="gouwuche"><img src="/img/gw5.png"/></a>
+					</div>				
+				</div>
+				<div class="prat-item">
+					<a href="#"><img src="/img/gw3.jpg"/ class="item-img"></a>
+					<div class="text">
+						<p class="text-name">I&nbsp;love&nbsp;you&nbsp;蜡烛</p>	
+						<p>i love you candle</p>
+						<p class="text-attr">￥2.50&nbsp;/5份</p>
+						<a href="#" class="gouwuche"><img src="/img/gw5.png"/></a>
+					</div>				
+				</div>
+				<div class="prat-item">
+					<a href="#"><img src="/img/gw4.jpg"/ class="item-img"></a>
+					<div class="text">
+						<p class="text-name">Happy Birthday 蜡烛</p>	
+						<p>happy birthday candle</p>
+						<p class="text-attr">￥2.50&nbsp;/5份</p>
+						<a href="#" class="gouwuche"><img src="/img/gw5.png"/></a>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script src="/lib/requirejs/require.js" data-main="/js/cart"></script>
 	</body>
 </html>

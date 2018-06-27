@@ -3,7 +3,160 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/bse.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/headandfoot.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/confirm.css"/>		
 	</head>
 	<body>
+		<div id="head">
+			
+		</div>
+		<div class="tbody">			
+				<div class="top">
+					<img src="/img/js1.jpg"/>
+				</div>
+			<div class="contenr">
+				<h2 class="title">
+					商品信息
+					<span class="list"></span>
+				</h2>
+				<ul class="list-headr">
+					<li class="list-li1">商品</li>
+					<li>属性</li>
+					<li>数量</li>
+					<li>优惠购</li>
+					<li>小计</li>
+					<li>优惠</li>
+					<li>查看</li>
+				</ul>
+				<div class="list-contenr">
+					
+				</div>
+				<div class="list-kong">
+					<div class="list-img">
+						<img src="/img/empty_basket.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="peisong">
+				<ul class="xingxi">
+					<li>
+						<h2 class="title">
+							 配送信息
+							<span class="list"></span>
+				    	</h2>
+				    	<div class="pei-dizhi">
+				    		<span class="pei">配送地址：</span>
+							<span class="dizhi"></span>
+							<a href="#" class="xingjia"><span id="zenjia">
+								新增收货地址
+							</span></a>
+				    	</div>
+				    	<div class="pei-shijian">
+				    		<span class="time">配送时间:</span>
+						 	<span class="times">请选择配送时间</span>
+				    	</div>
+					</li>
+					<li class="attr">
+						<h2 class="title" id="title">
+							 支付方式
+							<span class="list"></span>
+				    	</h2>
+				    	<div class="zaixian">
+				    		<img src="/img/zaixian.jpg"/>
+				    	</div>
+				    	<div class="zhihu">
+				    		<img src="/img/js2.png"/>
+				    		<img src="/img/js3.jpg"/>
+				    		<img src="/img/js4.jpg"/>
+				    		<img src="/img/js5.jpg"/>
+				    		<img src="/img/js6.jpg"/>
+				    	</div>
+					</li>
+					<li class="li-youhui">
+						<h2 class="title" id="youhui">
+							 我的优惠券/码
+							<span class="list"></span>
+				    	</h2>
+					</li>
+					<li class="gengduo">
+							<h2 class="title" id="fapiao">
+							 	更多信息
+								<span class="list"></span>
+				    		</h2>
+
+		    				<a href="#" class="xinfapiao">新增发票</a>
+		    				<span class="dianzhi">电子发票：</span>
+		    			<div class="shengri">		    							    									    					    	
+					    	<span>生日牌：</span>
+					    	<select>
+					    		<option>无</option>
+					    		<option>生日快乐</option>
+					    		<option>Happy Birthday</option>
+					    		<option>自定义</option>
+					    	</select>
+					    </div>	
+					    	<span class="heka">贺卡：</span>
+					    	<select class="sele">
+					    		<option>无</option>
+					    		<option>生日</option>
+					    	</select>
+		    					    		
+					</li>
+					<li>
+						<h2 class="title" id="dingdan">
+							 订单备注
+							<span class="list"></span>
+				    	</h2>
+				    	<textarea rows="7" cols="60" class="duohang" placeholder="11">
+				    		
+				    	</textarea>
+				    	<p class="shuru">还可以输入一百字</p>
+					</li>
+					<li class="fukuan">
+						<div class="footer-contenr">
+							<p class="p1">
+								你需要支付：
+							</p>
+							<p class="p2">				
+								<span class="qian">￥</span>
+								<span class="zongjia">0.00</span>
+							</p>
+							<a href="#" class="btn-settle">去付款</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--模板显示买到的商品-->
+		<script type="text/html" id="list-cotent">
+			{{each products prod}}
+				<ul class="list-ul" data-id="{{prod.id}}">					
+					<li class="li1"><img src="{{prod.img}}" class="conten-img"/></li>
+					<li class="li2">
+						<div class="names">
+							<p class="p1">{{prod.name}}</p>
+							<p class="p2">{{prod.names}}</p>	
+						</div>												
+					</li>
+					<li class="li3">
+						<div class="price">
+							<p>{{prod.attr}}/{{prod.zhong}}</p>
+							<p>{{prod.zensong}}</p>
+						</div>
+					</li>					
+					<li class="li4">
+						{{prod.amout}}
+					</li>
+					<li class="li5">
+						{{prod.jiange}}
+					</li>				
+				</ul>
+			{{/each}}
+		</script>
+		<div id="footer">
+			
+		</div>
+		<script src="/lib/requirejs/require.js" data-main="/js/confirm"></script>
 	</body>
 </html>
