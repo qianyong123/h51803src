@@ -12,5 +12,12 @@ require(["config"],function(){
 		const html=template("list-cotent",{products});
 		$(".list-contenr").html(html);
 		console.log(products);
+		//总价
+		var arr=0;
+		 const prod=$(".list-ul");	
+			prod.each(function(index,element){
+				arr+=Number($(element).find(".li5").text());
+			});
+		$(".zongjia").text(arr.toFixed(2));
 	});
 });

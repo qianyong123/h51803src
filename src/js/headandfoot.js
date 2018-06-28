@@ -31,13 +31,29 @@ define(["jquery","cookie"],function($){
 						$(".nav_li .shang").hide();
 				});
 				//读取cookie里的数量
+				var jian=$.cookie("products");
+				if(jian){
+					var shu=jian.length;
+					$(".a_span").text(shu);
+				}
 				//头部购物数量
 				$.cookie.json=true;
-				var shu=$.cookie("products").lenght;
-				if(shu===undefined){
-					$(".a_span").text(0);
-				}else				
-				$(".a_span").text(shu);				
+				var shu=$.cookie("zhanhu");
+				if(shu){
+					$(".head-zhanghu").html(shu);
+					$(".head-zhanghu").hover(function(){
+						$(".head-zhanghu").css({
+							background:"#fff",
+							color:"#e9546b"
+						});
+					},function(){					
+						$(".head-zhanghu").css({
+							background:"#e9546b",
+							color:"#fff"
+						});
+					})
+				};
+//				console.log(shu)
 		})
 		$("#footer").load("/html/include/foot.html");
 	});

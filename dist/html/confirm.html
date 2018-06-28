@@ -149,7 +149,7 @@
 						{{prod.amout}}
 					</li>
 					<li class="li5">
-						{{prod.jiange}}
+						{{(prod.jiange*prod.amout).toFixed(2)}}
 					</li>				
 				</ul>
 			{{/each}}

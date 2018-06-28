@@ -1,0 +1,349 @@
+//遮版
+.zheban{
+    width: 100%;
+    height:100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background: #F0F0F0;
+    opacity:0.8;
+    z-index:555;
+    display:none;
+    .popups {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 440px;
+        height: 294px;
+        margin: -200px 0 0 -222px;
+//      display: none;
+        background-color: #fff;
+        border: 2px solid #e9546b;
+        border-radius: 8px;
+        float: left;
+        z-index: 666;
+        .btns{
+                height: 60px;
+                width:100%;
+                a{
+                display: inline-block;
+                width: 218px;
+                height: 60px;
+                font-size: 18px;
+                line-height: 60px;
+                text-align: center;
+                color: #fff;
+                float: left;
+            }
+            .btn1{
+                background:indianred;
+            }
+            .btn2{
+                background-color: red;
+            }     
+        }
+    
+        .popup-info {
+            width: 100%;
+            height: 30px;
+            height: 230px;
+            font-size: 18px;
+            line-height:230px;
+            text-align: center;
+//          background:#F2DEDE;
+            color: black;
+            font-weight:700;
+        }
+    }
+}
+//扫码
+.saoma{
+        position: absolute;
+        top: 110px;
+        right: 50px;
+        height: 40px;
+        width: 140px;      
+        .erweima{
+            display: none;
+            position: absolute;
+            top:35px;
+            left:0;
+        }
+}
+ .shouji{
+        float: left;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;        
+        background: url(/img/sao1.png) no-repeat 10px center;  
+        padding-left:35px;
+        &:hover{
+            background-color:#C0C0C0;          
+        }
+       
+}
+.list-contenr{
+    width: 1208px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 40px;
+    overflow: hidden;
+    .list-img{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        top: 0;
+        left: 520px;
+        display: none;
+    }
+}
+//商品左边的图片
+.list-left{
+    float: left;
+    overflow: hidden;
+    #gallery_01{
+        padding:20px;
+        background:#F5F5F5;
+        img{
+            border: 1px solid #CCCCCC;
+        }
+        a {
+        display: inline-block;
+        width: 100px;
+        height:100px;
+        overflow: hidden;      
+        }
+    } 
+    .active {
+        padding: 1px;
+        background: red;
+    }
+    
+}
+.left-xiaotu{
+        width: 540px;
+        height: 108px;
+//      float: left;
+        div{
+            float: left;
+            img{
+                height: 108px;
+                width: 108px;
+            }
+        }
+    }
+//商品右边的详情
+.list-right{
+    float: right;
+    position: relative;
+    width: 580px;
+    .title{
+         width: 100%;
+        line-height: 40px;
+        font-size: 24px;
+        color: #45515e;
+        .cn{
+            display: inline-block;
+        }
+        .en{
+            display: inline-block;
+            margin-left: 26px;
+            font-size: 20px;
+        }
+    }
+    .desc{
+        width: 100%;
+        padding: 8px 0 24px;
+        color: #b5b5b5;
+        border-bottom: 1px dotted #b3a3a3;
+        p{
+            line-height: 24px;
+        }
+    } 
+    .specific{
+        width: 100%;
+        padding-top: 24px;
+        border-bottom: 1px dotted #b3a3a3;
+        .section{
+            margin-bottom: 20px;
+            height: 45px;
+//          overflow: hidden;
+            .jia{
+                float: left;
+                height: 45px;
+                line-height: 45px;
+                width: 520px;
+                color: #fff;
+                background-color: #e9546b;
+                .qian{
+                    float:left;
+//                  margin-top: 5px;
+                    margin-left: 45px;
+                    font-size:18px;
+                    .jiage{
+                        margin-top:2px;
+                        font-size:28px;
+                    }
+                    .span-jia{
+                        display: none;
+                    }
+                }
+                .chang{
+                    float: right;
+                     overflow: hidden;
+                     line-height: 45px;
+                    .kuan{
+                        margin-right: 26px;
+                        font-size: 16px;                  
+                    }
+                    .yuanbian{
+                        display:inline-block;
+                        height: 20px;
+                        width: 20px;
+                        border:1px solid white;
+                        border-radius: 50%;
+                        position: relative;
+                        margin-right: 30px;
+                        top:5px;
+//                      margin-top: 20px;
+                        .yuanxin{
+                           display:inline-block;
+                           position: absolute;
+                           top: 5px;
+                           left:5px;
+                           width: 10px;
+                           height:10px;
+                           border-radius:50%;
+                           background: white;
+                        }
+                    }
+                }
+            }
+            .zhong{
+                float: left;
+            }
+            .bang{
+                display: block;
+                float: left;
+                width: 129px;
+                height: 45px;
+                margin-bottom: 1px;
+                line-height: 45px;
+                text-align: center;
+                border-left: 1px solid #fff;
+                font-size: 16px;
+                color: #45515e;
+                background-color: #f5f5f5;
+                cursor: pointer;
+            }
+            .bang-clolr{
+                color: #e9546b;
+                border-bottom: 2px solid  #e9546b;
+            }
+        }
+        .guige{
+            float: left;
+            width:50px;
+            line-height: 45px;
+            color: #505050;
+            font-size: 14px;
+        }
+    } 
+ }
+ //商品的消息
+ .ul1{
+     font-size: 14px;
+     width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px dotted #b3a3a3;
+    overflow: hidden;
+    li{
+        position: relative;
+        float: left;
+        width: 290px;
+        line-height: 30px;
+        color: #b3b3b3;
+        padding-left: 40px;
+        i{
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background:  #b3b3b3;
+            position: absolute;
+            top: 40%;
+            left: 10px;
+        }
+    }
+ }
+.ul2,.ul3,.ul4{
+    display: none;
+}
+//数量
+.shuliang{
+    width: 100%;
+    padding: 27px 0;
+    color: #505050;
+    overflow: hidden;
+    position: relative;
+    .shu{
+        float: left;
+        width: 50px;
+        height: 35px;
+        line-height: 35px;
+        color: #505050;
+        margin-right:15px;
+    }
+    .amouct{
+        width: 138px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        float: left;
+        margin:0 10px;
+    }
+    .shu-cn{
+        display: block;
+        width: 27px;
+        height: 30px;
+        float: left;
+        line-height: 33px;
+        margin-top: 5px;
+        background:url(/img/jj.png) no-repeat;
+    }
+    .shu-en{
+        display: block;
+        float: left;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+         margin-top: 5px;
+        background:url(/img/tb4.png) no-repeat;
+    }
+}
+//加入购物车
+.gouwuche{
+    width: 100%;
+    margin-left: 10px;
+    .arrt{
+        display: inline-block;
+        width: 230px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 18px;
+        color: #fff;
+        margin-left: 20px;
+         background-color: #fb657e;
+         text-decoration: none;
+         &:hover{
+             text-decoration: underline;
+         }
+    }
+}
+.listimg{
+    width: 1212px;
+    margin:50px auto;
+}

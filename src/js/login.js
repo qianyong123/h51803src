@@ -30,8 +30,9 @@ require(["config"],function(){
 			}else{
 				$(".ul1-cuowu").hide();
 				$(".ul1-chenggong").show();
+				$.cookie.json=true;
+				$.cookie("zhanhu",name,{expires:7,path:"/"});
 				window.location.href="/index.html";
-				$(".head-zhanghu").text(name);
 			}
 		});
 		//登录验证用户名和密码
@@ -44,7 +45,9 @@ require(["config"],function(){
 			}else{
 				$(".ul2-cuowu").hide();
 				$(".ul2-chenggong").show();
-				$(".head-zhanghu").text(name);
+				$(".head-zhanghu").text(name);				
+				$.cookie.json=true;
+				$.cookie("zhanhu",name,{expires:7,path:"/"});
 				window.location.href="/index.html";
 			}
 		});

@@ -31,7 +31,6 @@ require(["config"],function(){
 					$(".ercimima").hide();
 			}
 		});
-		
 		//把账号密码存到cookie里面
 		$("#btn-zhuche").click(function(){
 			const username=$("#haoma").val(),
@@ -40,7 +39,8 @@ require(["config"],function(){
 					$.cookie.json=true;
 					$.cookie("username",username,{expires:7,paht:"/"});
 					$.cookie("password",password,{expires:7,paht:"/"});
-					$(".pp-chengong").show();
+//					$(".pp-chengong").show();
+					window.location.href="/html/login.html";
 			}						
 //			console.log(username,password)
 //			console.log(22)

@@ -114,6 +114,7 @@ $wid:1263px;
 	height: 818px;
 	background: #fefefe;
 	position: relative;
+	border-bottom: 4px solid #eaeaea;
 }
 .list{
 	/*padding:90px 155px;*/
@@ -148,7 +149,7 @@ $wid:1263px;
 }
 /*当季热卖*/
 .section{
-	border-top:4px solid #eaeaea;
+//	border-top:4px solid #eaeaea;
 	width:1208px;
 	margin:auto;
 	overflow: hidden;
@@ -433,4 +434,40 @@ $wid:1263px;
 }
 #content_foot .content_img{
 	display:inline-block;
+}
+//列表页面
+.conter-nav{
+    width: 1208px;
+    margin: 0 auto;
+    a{
+        display: inline-block;
+        width: 80px;
+        height: 20px;
+        margin-left: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 2px;
+        color: #505050;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover{
+            text-decoration: none;
+            background-color: #e9546b;
+            color: #fff;
+        }
+    }
+    .list-nav{
+        margin-top:40px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .list-kouwu{
+       margin-top:10px;
+       margin-bottom: 20px;
+       padding-bottom: 20px;
+       border-bottom:1px solid #101010;
+    }
+    .shangping{
+        margin-left: 20px;
+    }
 }

@@ -32,7 +32,7 @@ require(["config"],function(){
 		//渲染购物车模板
 		const html=template("contenr",{products});
 		$(".list-wrapper .content").html(html);
-		console.log(products);
+//		console.log(products);
 		//加减数量
 		$(".content").on("click",".jia,.jian",function(){
 			const id=$(this).parents(".ul1").data("id");

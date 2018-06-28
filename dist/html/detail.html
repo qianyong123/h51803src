@@ -3,7 +3,119 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bse.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/headandfoot.css"/>
+		<link rel="stylesheet" href="/css/index.css"/>
 	</head>
 	<body>
+		<div id="head">
+			
+		</div>
+		<div class="conter-nav">
+			<div class="list-nav">
+				<span class="shangping">商品：</span>
+				<a href="#">全部</a>
+				<a href="#">芝士系列</a>
+				<a href="#">巧克力系列</a>
+				<a href="#">拿破仑系列</a>
+				<a href="#">慕斯系列</a>
+				<a href="#">乳脂系列</a>
+				<a href="#">选拼系列</a>
+			</div>
+			<div class="list-kouwu">
+				<span class="shangping">口味：</span>
+				<a href="#" style="background: #e9546b;color:white;">拿破仑</a>
+				<a href="#">水果</a>
+				<a href="#">芝士</a>
+				<a href="#">巧克力</a>				
+				<a href="#">慕斯</a>
+				<a href="#">咖啡</a>
+				<a href="#">鲜奶</a>
+				<a href="#">无糖</a>
+			</div>
+		</div>
+		
+		<div class="section">				
+                <div id="section_content">
+                	
+                </div>
+			</div>
+			<!--//模板-->
+		<script type="text/html" id="content">
+				{{each list prod}}
+					<div class="section_group" data-id="{{prod.id}}">
+						<div class="img">
+							<a href="#" class="list-img"><img src="{{prod.img}}"/ id="list_img"></a>
+							<div id="detail">
+								<div id="xx">
+									
+								</div>
+								
+								<div class="detail_top">
+									<p>常规款</p>
+								</div>
+								<div class="detail_bottom">
+									<div class="span1">
+										<span class="span_bcg zhong" data-id=0>1.2磅</span>
+										<span class="zhong" data-id=1>2.2磅</span>
+										<span class="zhong" data-id=2>3.2磅</span>
+										<span class="zhong" data-id=3>5.2磅</span>
+									</div>
+									<div class="uls">
+										 <ul class="ul1">
+											<li><i></i>14CM*14CM*4.5CM≈6寸,约510g</li>
+											<li class="zensong"><i></i>免费赠送5份餐具</li>
+											<li><i></i>4-5人食用</li>
+									 	</ul>
+										<ul class="ul1 ul2">
+											<li><i></i>17.5CM*17.5CM*4.5CM≈8寸,约950g</li>
+											<li class="zensong"><i></i>免费赠送10份餐具</li>
+											<li><i></i>7-8人食用</li>
+										</ul>
+										<ul class="ul1 ul3">
+											<li><i></i>23CM*23CM*4.5CM≈12寸</li>
+											<li class="zensong"><i></i>免费赠送15份餐具</li>
+											<li><i></i>11-12人食用</li>
+										</ul>
+										<ul class="ul1 ul4">
+											<li><i></i>30CM*30CM*4.5CM≈14寸,约2.3kg</li>
+											<li class="zensong"><i></i>免费赠送15份餐具</li>
+											<li><i></i>14-20人食用</li>
+										</ul>
+									</div>
+									
+									<div class="gouwushu">
+										<a href="#" class="jian"></a>
+										<input type="text" id="jiage" value="1" readonly="readonly"/>
+										<span>￥<b style="font-weight:normal;" class="bb">{{prod.jia}}</b></span>
+										<a href="#" class="jia"></a>
+									</div>
+									<div class="goumai">
+										<a href="#" class="confirm">立即购买</a>
+										<a href="#" class="cart">加入购物车</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text">
+							<p class="desc">{{prod.desc}}</p>
+							<p class="name">
+								<span class="name_en">{{prod.en}}</span>
+								<span class="name_cn">{{prod.cn}}</span>
+							</p>
+							<p class="attr">{{prod.attr}}</p>
+							<div id="attr_jia" style="display: none;">
+								{{prod.jia}}
+							</div>
+							<a href="#" class="gouwuche" id="gouwuche"><img src="{{prod.gouwu}}"/></a>
+						</div>
+					</div>
+				{{/each}}
+			</script>
+		<div id="footer">
+			
+		</div>
+		<script src="/lib/requirejs/require.js" data-main="/js/men"></script>
 	</body>
 </html>
