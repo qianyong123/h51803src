@@ -52,6 +52,12 @@ gulp.task("js",function(){
 		.pipe(gulp.dest("dist/js"))
 		.pipe(connect.reload());
 });
+//复制php文件到dist目录下面，让php修改后能够重新加载
+gulp.task("php",function(){
+	gulp.src("src/php/**/*.php")
+		.pipe(gulp.dest("dist/php"))
+		.pipe(connect.reload());
+});
 // 编译 *.scss 文件为 *.css 文件 ，放到dist目录下面，让css修改后能够重新加载
 gulp.task("sass",function(){
 	gulp.src("src/sass/*.scss")//愿
@@ -67,6 +73,7 @@ gulp.task("watch", function(){
 	gulp.watch("src/js/**/*.js",["js"]);
 	gulp.watch("src/img/**/*.*",["copy-img"]);
 	gulp.watch("src/mock/**/*.*",["copy-mock"]);
+	gulp.watch("src/php/**/*.php",["php"]);
 });
 gulp.task("copy",["copy-lib","copy-img","copy-mock"]);
-gulp.task("default",["html","sass","connect","watch","copy","js"]);
+gulp.task("default",["html","sass","connect","watch","copy","js","php"]);

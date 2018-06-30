@@ -29,7 +29,7 @@ require(["config"],function(){
 					}
 					return -1;
 				}
-			//阻止默认行为
+//			阻止默认行为
 				$("#content_foot").on("click","a",function(e){
 						 e.preventDefault();
 						});
@@ -47,8 +47,8 @@ require(["config"],function(){
 					$(".section_group:eq(3)").addClass("section_3");
 					$(".section_group:eq(7)").addClass("section_3");
 					$(".section_group:eq(11)").addClass("section_3");
-					//阻止默认行为
-					$(".section").on("click","a",function(e){
+//					阻止默认行为
+					$(".gouwushu").on("click","a",function(e){
 						 e.preventDefault();
 						});
 					//数量每次点击购物车都为1
@@ -110,7 +110,7 @@ require(["config"],function(){
 								zhong:$(this).parents(".section_group").find(".span_bcg").text(),
 								jiange:Number($(this).parents(".section_group").find("#attr_jia").text()),
 								attr:$(this).parents(".section_group").find(".attr").text().slice(0,8),
-								amout:1
+								amout:Number($(this).parents(".section_group").find("#jiage").val())
 						};
 						// cookie插件配置
 						$.cookie.json=true;
@@ -121,21 +121,30 @@ require(["config"],function(){
 						if(index===-1){
 							products.push(currprod);
 						}else{
-							products[index].amout++;
+							products[index].amout=(products[index].amout)+(currprod.amout);
 						}
 						//把当前商品存到cookie
 						$.cookie("products",products,{expires:7,path:"/"});
 						//点击键入购物车遮板显示出来
-						$(".zheban").css({
-							display:"block"
-						});
-//						console.log(currprod)
+						$(".zheban").show();
+						$(".popup-result").show();
+						function haedshu(){
+							$.cookie.json=true;
+							var products=$.cookie("products");						
+							//头部购物数量
+							if(products){	
+									var shu=products.length;
+									$(".a_span").text(shu);
+//									console.log(products,shu)
+								}
+						}
+				
+						haedshu();
 					});
 					//点击在逛逛
-					$(".zheban").on("click",".btn1",function(){				
-						$(".zheban").css({
-							display:"none"
-						});
+					$(".popups").on("click",".btn1",function(){				
+						$(".popups").hide();
+						$(".zheban").hide();
 					});				
 			});
 				

@@ -11,38 +11,67 @@
 		<div id="head">
 			
 		</div>
+		<!--//遮板-->
+		<div class="login-zheban">
+			
+		</div>
+		<!--验证码-->
+		<div class="yanzhengma">
+			<i class="yan-xx"></i>
+			<p class="tishi"><span class="tishi-tt">提示：</span></p>
+			<ul class="login-yanzeng">
+				<li>
+					<span class="yan-span1">验证码：</span>
+					<input type="text" id="yanma"/>
+				</li>
+				<li>
+					<a href="#"></a>
+					<span class="yan-span2">看不清？<a href="#">换一换</a></span>
+					
+				</li>
+			</ul>
+			<div class="yan-tijiao">
+				<a href="#" class="a-queren">确认</a>
+				<a href="#" class="a-quxiao">取消</a>
+			</div>
+		</div>
 		<div id="page_register">
 			<div class="zhuche">
 				<div class="page_img">
 					<img src="../img/rigister-img.jpg" />
 				</div>
 				<div class="page_input">
-					<ul>
-						<li id="rsg">RSGISTER</li>
-						<li>
-							<input type="text" id="haoma" placeholder="请输入手机号码" />
-						</li>
-						<li class="dongtaimima">
-							<input type="text" id="dongtai" placeholder="请输入动态码" />
-							<a href="#" id="huoqu_dongtai">获取动态密码</a>
-						</li>
-						<li>
-							<input type="text" id="password" placeholder="请输入设置密码，以字母开头6~18位" />
-						</li>
-						<li>
-							<input type="password" id="password_chong" placeholder="请确认输入设置密码" />
-						</li>
-						<li>
-							<a href="#" id="btn-zhuche">注册</a>
-						</li>
-						<li>
-							<p class="ercimima pp">第二次密码输入错误</p>
-							<p class="cuowu pp">手机号码格式不正确，请重新输入!</p>
-							<p class="mimacuowu pp">密码输入格式有误，请以之母开头，长度在6~18之间</p>
-							<p class="pp pp-chengong" style="color:green;display:none;">注册成功</p>
-							<p class="yiyou">已有账号,<a href="/html/login.html" class="denglu">登录</a></p>
-						</li>
-					</ul>
+					<form action="#" method="get" class="reg_form" onsubmit="return false;">
+						<ul>
+							<li id="rsg">RSGISTER</li>
+							<li>
+								<input type="text" name="username" id="haoma" placeholder="请输入手机号码" />
+								<span class="pp cunzai" style="display:none;">用户也存在</span>
+								<span class="pp keyi" style="color:green;display:none;">可以注册</span>
+							</li>
+							<li class="dongtaimima">
+								<input type="text" id="dongtai" placeholder="请输入动态码" />
+								<a href="#" class="huoqu-dongtai">获取动态密码</a>
+							</li>
+							<li>
+								<input type="text" name="password" id="password" placeholder="请输入设置密码，以字母开头6~18位" />
+							</li>
+							<li>
+								<input type="password" id="password_chong" placeholder="请确认输入设置密码" />
+							</li>
+							<li>
+								<input type="submit" value="注册" id="btn-zhuche">
+							</li>
+							<li>
+								<p class="ercimima pp">第二次密码输入错误</p>
+								<p class="cuowu pp">手机号码格式不正确，请重新输入!</p>
+								<p class="mimacuowu pp">密码输入格式有误，请以之母开头，长度在6~18之间</p>
+								<p class="shibai pp"></p>
+								<p class="pp pp-chengong" style="color:green;display:none;">注册成功</p>
+								<p class="yiyou">已有账号,<a href="/html/login.html" class="denglu">登录</a></p>
+							</li>
+						</ul>
+					</form>
 				</div>
 			</div>
 		</div>

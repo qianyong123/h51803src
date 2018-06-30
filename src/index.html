@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<meta http-equiv="refresh" content="20">-->
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
 		<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -12,14 +13,15 @@
 	</head>
 	<body>
 		<div class="zheban">
-			<div class="popups popup-result" style="display:block;">
+			
+		</div>
+		<div class="popups popup-result">
 	            <p class="popup-info">您所选的商品已加入购物篮！</p>
 	            <p class="btns clearfix">
 	                <a href="Javascript:void(0)" class="btn1">再逛逛</a>
 	                <a href="/html/confirm.html" class="btn2">去结算</a>
 	            </p>
-          	</div>
-		</div>
+         </div>
 		<div id="head">
 			
 		</div>
@@ -133,8 +135,8 @@
 										<a href="#" class="jia"></a>
 									</div>
 									<div class="goumai">
-										<a href="#" class="confirm">立即购买</a>
-										<a href="#" class="cart">加入购物车</a>
+										<a href="/html/confirm.html" class="confirm" target="_blank">立即购买</a>
+										<a href="javascript:void(0)" class="cart">加入购物车</a>
 									</div>
 								</div>
 							</div>
@@ -149,7 +151,7 @@
 							<div id="attr_jia" style="display: none;">
 								{{prod.jia}}
 							</div>
-							<a href="#" class="gouwuche" id="gouwuche"><img src="{{prod.gouwu}}"/></a>
+							<a href="javascript:void(0)" class="gouwuche" id="gouwuche"><img src="{{prod.gouwu}}"/></a>
 						</div>
 					</div>
 				{{/each}}
@@ -159,10 +161,6 @@
 			
 		</div>
 		<script src="/lib/requirejs/require.js" data-main="/js/men"></script>
-		 <!--<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
-    	 <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-    	 <script src="lib/artTemplate/template-web.js"></script>
-    	 <script src="js/headandfoot.js"></script>-->
-    	 <!--<script src="js/men.js"></script>-->
+		 
 	</body>
 </html>

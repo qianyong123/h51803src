@@ -106,7 +106,7 @@ a {
   width: 260px;
 }
 
-#page_register .zhuche .page_input ul .dongtaimima #huoqu_dongtai {
+#page_register .zhuche .page_input ul .dongtaimima .huoqu-dongtai {
   padding: 0;
   margin: 0;
   display: block;
@@ -205,4 +205,128 @@ a {
   color: red;
   display: none;
   margin-left: 10px;
+}
+
+.login-zheban {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #C0C0C0;
+  z-index: 999;
+  opacity: 0.8;
+  display: none;
+}
+
+.yanzhengma {
+  width: 380px;
+  height: 270px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -135px;
+  z-index: 99999999;
+  background: #fff;
+  display: none;
+}
+
+.yanzhengma .yan-xx {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  cursor: pointer;
+  background: url(/img/jsb3.png) no-repeat;
+}
+
+.yanzhengma .tishi {
+  width: 100%;
+  height: 38px;
+  line-height: 30px;
+  color: #ef2121;
+  border-bottom: 1px solid #ca0343;
+  font-size: 18px;
+}
+
+.yanzhengma .tishi .tishi-tt {
+  margin-left: 24px;
+}
+
+.yanzhengma .login-yanzeng {
+  width: 100%;
+  padding: 30px 0 14px 0;
+}
+
+.yanzhengma .login-yanzeng li {
+  width: 330px;
+  margin: 0 auto;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.yanzhengma .login-yanzeng .yan-span1 {
+  width: 56px;
+  font-size: 14px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  color: #515151;
+  margin-left: 20px;
+}
+
+.yanzhengma .login-yanzeng #yanma {
+  width: 240px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  float: left;
+  text-indent: 1em;
+}
+
+.yanzhengma .login-yanzeng .yan-span2 {
+  width: 164px;
+  text-align: center;
+  float: right;
+  color: #b4b4b4;
+  font-size: 14px;
+}
+
+.yanzhengma .login-yanzeng .yan-span2 a {
+  color: #de0606;
+  text-decoration: none;
+}
+
+.yanzhengma .yan-tijiao {
+  width: 330px;
+  margin: 0 auto;
+  height: 46px;
+}
+
+.yanzhengma .yan-tijiao a {
+  width: 160px;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.yanzhengma .yan-tijiao .a-queren {
+  float: left;
+  background: #b11e1e;
+}
+
+.yanzhengma .yan-tijiao .a-quxiao {
+  float: right;
+  background: #e44343;
 }

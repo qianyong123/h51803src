@@ -10,8 +10,9 @@ $width:1208px;
     opacity:0.8;
     z-index:555;
     display:none;
+ }  
     .popups {
-        position: absolute;
+        position:fixed;
         top: 50%;
         left: 50%;
         width: 440px;
@@ -23,6 +24,7 @@ $width:1208px;
         border-radius: 8px;
         float: left;
         z-index: 666;
+        display: none;
         .btns{
                 height: 60px;
                 width:100%;
@@ -37,10 +39,10 @@ $width:1208px;
                 float: left;
             }
             .btn1{
-                background:indianred;
+                background:#F02B63;
             }
             .btn2{
-                background-color: red;
+                background-color:#FF0000;
             }     
         }
     
@@ -56,7 +58,7 @@ $width:1208px;
             font-weight:700;
         }
     }
-}
+
 //banner
 $wid:1263px;
 .banner_img{

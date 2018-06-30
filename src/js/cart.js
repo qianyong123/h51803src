@@ -82,8 +82,11 @@ require(["config"],function(){
 				products.splice(index,1);
 				$.cookie("products",products,{expires:7,path:"/"});
 				$(this).parents(".ul1").remove();
+				console.log(products.length);
+//				const img=$(".list-contenr");
 				if(products.length===0){
-					$(this).parents(".list-wrapper").find(".list-contenr").show();
+					$(".list-contenr").show();
+//					console.log(img);
 				}else
 					$(this).parents(".list-wrapper").find(".list-contenr").hide();
 					zongjia();
