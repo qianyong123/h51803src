@@ -267,7 +267,7 @@ a {
   margin: 0 auto;
   height: 36px;
   line-height: 36px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .yanzhengma .login-yanzeng .yan-span1 {
@@ -290,8 +290,24 @@ a {
   text-indent: 1em;
 }
 
+.yanzhengma .login-yanzeng #gen_cod {
+  display: block;
+  float: left;
+  width: 90px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 5px;
+  margin-left: 84px;
+}
+
+.yanzhengma .login-yanzeng #gen-cuowu {
+  font-size: 12px;
+  color: red;
+  float: left;
+}
+
 .yanzhengma .login-yanzeng .yan-span2 {
-  width: 164px;
+  width: 156px;
   text-align: center;
   float: right;
   color: #b4b4b4;

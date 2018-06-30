@@ -31,9 +31,7 @@ require(["config"],function(){
 					//阻止默认行为
 					$(".gouwushu").on("click","a",function(e){
 						 e.preventDefault();
-						});
-					//数量每次点击购物车都为1
-					var shuliang=1;
+					});
 					var gouwu=$(".gouwuche"),
 						xx=$(".section_group #xx");//获取关闭按钮
 //					console.log(gouwu,xx);
@@ -41,10 +39,6 @@ require(["config"],function(){
 					$(".section_group").on("click",".gouwuche",function(){
 						const inde=Array.from(gouwu).indexOf(this);
 						const deta=$(".img #detail").eq(inde).animate({top:0},400);	
-						shuliang=1;
-						$(".gouwushu #jiage").eq(inde).val(1);
-						
-//						console.log(inde,deta);
 					});
 					//关闭购物信息
 	    			$(".section_group").on("click","#xx",function(){
@@ -54,20 +48,19 @@ require(["config"],function(){
 					});
 					 //购物信息里的加和减
 					$(".gouwushu").on("click",".jia,.jian",function(){
-						const id=$(this).parents(".section_group").data("id");
+						var jia=$(this).parents(".section_group").find("#attr_jia").text();
+						var shu=$(this).siblings("#jiage").val();
 						if($(this).is(".jia")){
-							shuliang++;							
+							shu++;			
 						}else{
-							if(shuliang<=1)
-								return;
-							shuliang--;						
+							if(shu<=1)
+							return;
+							shu--;	
 						}
-						$(".gouwushu #jiage").eq(id).val(shuliang);
-						const shu=$(".gouwushu #jiage").eq(id).val();
-						const bb=$(".text #attr_jia").eq(id).text();
-						const qq=shu*bb;
-//						console.log(shu,bb,qq);
-						$(".gouwushu .bb").eq(id).text(qq);
+							$(this).siblings("#jiage").val(shu);
+							var qq=shu*jia;
+							$(this).parents(".gouwushu").find(".bb").text(qq);
+//						console.log(jia,shu)
 					});
 					//购物信息里的重量
 					$(".detail_bottom").on("click",".zhong",function(){	
