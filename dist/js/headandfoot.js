@@ -80,7 +80,7 @@ define(["jquery","template","cookie"],function($,template){
 				});
 				//购物车里商品的件数
 				function haedshu(){
-							$.cookie.json=true;
+					$.cookie.json=true;
 					var products=$.cookie("products");						
 					//头部购物数量
 					if(products){	
@@ -100,35 +100,39 @@ define(["jquery","template","cookie"],function($,template){
 					return -1;
 				}
 				//显示购物商品
+				function shangping() { 
 					$.cookie.json=true;
 					var products=$.cookie("products");	
-				if(products){
-					const html=template("head-contenr",{products});
-					$("#shangping").html(html);
-					
-					//删除商品
-					
-					$("#shangping").on("click","#li5-shanchu",function(){
-						const id=$(this).parents(".head-ul").data("id");
-						$(this).parents(".head-ul").remove();
-						const index=exist(id,products);
-						products.splice(index,1);
-						$.cookie("products",products,{expires:7,path:"/"});	
-						if(products.length===0){
-							$("#shangping #search").hide();
-							$(".a_span").text(0);
-						}
-						haedshu();
+					if(products){
+						const html=template("head-contenr",{products});
+						$("#shangping").html(html);
 						
-					});
+						//删除商品
+						
+						$("#shangping").on("click","#li5-shanchu",function(){
+							const id=$(this).parents(".head-ul").data("id");
+							$(this).parents(".head-ul").remove();
+							const index=exist(id,products);
+							products.splice(index,1);
+							$.cookie("products",products,{expires:7,path:"/"});	
+							if(products.length===0){
+								$("#shangping #search").hide();
+								$(".a_span").text(0);
+							}
+							haedshu();
+							
+						});
 					
 					//隐藏多余购物车的div
 					const se=$("#shangping #search").last().show();
 //					console.log(se);
 					
-				}
+						}
+				 };
+				shangping();
 				//点击显示购物商品
 				$(".gouwu-sp").click(function(){
+					shangping();
 					$("#shangping").toggle();
 				});
 								

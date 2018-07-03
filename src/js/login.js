@@ -37,7 +37,8 @@ require(["config"],function(){
 						$(".ul1-chenggong").show();	
 						$.cookie.json=true;
 						$.cookie("zhanghu",val,{expires:7,path:"/"});
-						window.location.href="/index.html";
+						window.history.go(-1);
+						window.location.reload();
 			 		}else{
 			 			$(".ul1-cuowu").show();
 						$(".ul1-chenggong").hide();	
@@ -48,15 +49,16 @@ require(["config"],function(){
 		});
 		//登录验证用户名和密码
 		$("#btn2").click(function(){
-			const val=$("#haoma2").val();
+			const val=Number($("#haoma2").val());
 			const url="http://localhost/wamp/www/dangao/dist/php/login.php";
 			 $.post(url,$(".form2").serialize(),function(data){
 			 		if(data.res_code===1){		 			
 			 			$(".ul2-cuowu").hide();
 //						$(".ul2-chenggong").show();	
 						$.cookie.json=true;
-						$.cookie("zhanghu",val,{expires,path:"/"});
-						window.location.href="/index.html";
+						$.cookie("zhanghu",val,{expires:7,path:"/"});
+						window.history.go(-1);
+						window.location.go(-1);
 			 		}else{
 			 			$(".ul2-cuowu").show();
 						$(".ul2-chenggong").hide();	

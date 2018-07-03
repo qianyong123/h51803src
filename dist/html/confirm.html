@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>结算页面</title>
 		<link rel="stylesheet" type="text/css" href="/css/bse.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/headandfoot.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/confirm.css"/>		
@@ -11,10 +11,15 @@
 		<div id="head">
 			
 		</div>
+		<!--遮板-->
+		<div class="confirm-zheban">
+			
+		</div>
+		
 		<div class="tbody">			
-				<div class="top">
-					<img src="/img/js1.jpg"/>
-				</div>
+			<div class="top">
+				<img src="/img/js1.jpg"/>
+			</div>
 			<div class="contenr">
 				<h2 class="title">
 					商品信息
@@ -39,6 +44,50 @@
 				</div>
 			</div>
 			<div class="peisong">
+				<div class="popups popup-dizhi">
+					<p class="popup-title">编写收货地址</p>
+					<ul class="popup-info">
+						<li class="clearfix">
+							<p class="label">收货人：</p>
+							<input type="text" class="input-name" placeholder="请输入收货人姓名" />
+						</li>
+						<li class="clearfix">
+							<p class="label">送货地址：</p>
+							<label class="sel-Province">
+								<select class="select-Province">
+									<option>请选择</option>
+								</select>
+							</label>
+							<label class="sel-city">
+								<select class="select-city">
+									<option>请选择</option>
+								</select>
+							</label>
+							<label class="sel-ext">
+								<select class="select-ext">
+									<option>请选择</option>
+								</select>
+							</label>
+						</li>
+						<li class="clearfix">
+							<p class="label"></p>
+							<input type="text" class="input-dizhi" placeholder="请注明街道、门牌号信息" />
+						</li>
+						<li class="clearfix">
+							<p class="label">手机：</p>
+							<input type="text" class="input-haoma" placeholder="请输入手机号码" />
+						</li>
+						<li class="clearfix">
+							<p class="label">固定电话：</p>
+							<input type="text" class="input-dianhua" placeholder="区号-电话号码" />
+						</li>
+					</ul>
+					<p class="popup-btns">
+						<a href="javascript:coid(0)" id="btn-cancel">取消</a>
+						<a href="javascript:coid(0)" id="btn-confirm">确认</a>
+						<a href="javascript:coid(0)" id="btn-detail">查看配送详情</a>
+					</p>
+				</div>
 				<ul class="xingxi">
 					<li>
 						<h2 class="title">
@@ -47,14 +96,41 @@
 				    	</h2>
 				    	<div class="pei-dizhi">
 				    		<span class="pei">配送地址：</span>
-							<span class="dizhi"></span>
-							<a href="#" class="xingjia"><span id="zenjia">
+				    		<p id="dizhi">
+				    			<span class="pei-span1"></span>
+				    			<span class="pei-span2"></span>
+				    			<span class="pei-span3"></span>
+				    			<span class="pei-span4"></span>
+				    			<span class="pei-span5"></span>
+				    			<span class="pei-span6"></span>
+				    			<span class="pei-span7"></span>
+				    			<span class="pei-span8">默认地址</span>
+				    			<span class="pei-span9">编辑</span>
+				    		</p>
+							<a href="javascript:void(0)" class="xingjia"><span id="zenjia">
 								新增收货地址
 							</span></a>
 				    	</div>
 				    	<div class="pei-shijian">
 				    		<span class="time">配送时间:</span>
-						 	<span class="times">请选择配送时间</span>
+				    		<input type="text" id="shijian" placeholder="请选择日期"/>
+						 	<p class="times"><span class="time-span1">请选择配送时间</span>
+						 		<span class="time-span2"></span>
+						 	</p>
+						 	<ul class="time-shijian">
+						 		<li class="active">09:30-10:30</li>
+						 		<li class="last">10:30-11:30</li>
+						 		<li class="last">11:30-12:30</li>
+						 		<li class="last">12:30-13:30</li>
+						 		<li class="last">13:30-14:30</li>
+						 		<li class="last">14:30-15:30</li>
+						 		<li class="last">15:30-16:30</li>
+						 		<li class="last">16:30-17:30</li>
+						 		<li class="last">17:30-18:30</li>
+						 		<li class="last">18:30-19:30</li>
+						 		<li class="last">19:30-20:30</li>
+						 		<li class="last">20:30-21:30</li>
+						 	</ul>
 				    	</div>
 					</li>
 					<li class="attr">
@@ -85,7 +161,7 @@
 								<span class="list"></span>
 				    		</h2>
 
-		    				<a href="#" class="xinfapiao">新增发票</a>
+		    				<a href="javascript:void(0)" class="xinfapiao">新增发票</a>
 		    				<span class="dianzhi">电子发票：</span>
 		    			<div class="shengri">		    							    									    					    	
 					    	<span>生日牌：</span>
@@ -122,7 +198,7 @@
 								<span class="qian">￥</span>
 								<span class="zongjia">0.00</span>
 							</p>
-							<a href="#" class="btn-settle">去付款</a>
+							<a href="javascript:void(0)" class="btn-settle">去付款</a>
 						</div>
 					</li>
 				</ul>

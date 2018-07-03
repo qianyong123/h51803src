@@ -1,6 +1,15 @@
 require(["config"],function(){
 	require(["jquery","template","load","booststrap","cookie"],function($,template){
 		$(function(){
+			$(window).scroll(function () {
+				var aa=$(document).scrollTop();
+				console.log(11,aa);
+				if(aa>1000){
+					$(".index-fanghui").show();
+				}else{
+					$(".index-fanghui").hide();
+				}
+			  });
 			//模板特惠
 			$.getJSON("/mock/list.json",function(data){
 				const html=template("list_template", {list: data.res_body.list});

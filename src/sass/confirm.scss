@@ -1,4 +1,15 @@
-
+//遮板
+.confirm-zheban{
+     position: fixed;
+    width: 100%;
+    height: 100%; 
+    top:0;
+    left:0;
+    background:#FFFDEF;
+    opacity: 0.7;
+    z-index: 999;
+    display: none;
+}
 .tbody{
     width:100%;
 }
@@ -118,6 +129,120 @@ $color:#45515e;
     width: 1208px;
     margin: 0 auto;
     margin-top: 70px;
+//  position: relative
+}
+//弹框地址
+.popups{
+    position:fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 2px solid #e9546b;
+    border-radius: 8px;
+    z-index: 9999;
+    display: none;
+}
+.popup-dizhi{
+    width: 590px;
+    background-color: #fff;
+    padding-bottom: 24px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    overflow: hidden;
+    .popup-info{
+      width: 470px;
+      margin: 0 auto;
+     
+      li{
+            position: relative;
+            height: 40px;
+            margin-bottom: 10px;
+            line-height: 40px;
+            input{
+                 float: left;
+                width: 380px;
+                height: 40px;
+                border: none;
+                border-radius: 2px;
+                background-color: #f5f5f5;
+                line-height: 40px;
+                text-indent: 20px;
+            }
+      }
+    }
+    .label{
+        font-size: 14px;
+        float: left;
+        width: 70px;
+        margin-right: 10px;
+        height: 40px;
+        line-height: 40px;
+        color: #45515e;
+    }
+    label{
+        float: left;
+        select{
+            color: #505050;
+            height: 40px;
+            width: 118px;
+            line-height: 40px;
+            margin-left: 8px;
+            option{
+                height: 20px;
+                width: 210px;
+                line-height: 40px;
+                color: #505050;
+            }
+        }
+        .select1{
+            margin:0;
+        }
+    }
+    .popup-title{
+        position: relative;
+        width: 470px;
+        height: 70px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 70px;
+        font-weight: 700;
+        color: #45515e;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: -20px;
+            content: "●";
+            font-size: 16px;
+            color: #45515e;
+            font-weight: 700;
+        }
+    } 
+    .popup-btns{
+         margin-top: 30px;
+        a{
+            float: left;
+            display: block;
+            width: 140px;
+            height: 45px;
+            background-color: #e9546b;
+            border-radius: 2px;
+            line-height: 45px;
+            text-align: center;
+            color: #fff;
+        }
+        #btn-cancel{
+            margin:0 20px 0 140px;
+            background-color:#f2b4be;
+        }       
+        #btn-detail{
+            width: 84px;
+            background-color: transparent;
+            margin-left: 20px;
+            color: #4682be;
+            font-size: 14px;
+        }
+    }  
 }
 //配送地址
 .pei-dizhi{
@@ -127,6 +252,48 @@ $color:#45515e;
     margin-left: 10px;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
+    .pei{
+        display:block;
+        float: left;
+    }
+    
+    #dizhi{
+        float: left;
+        height: 90px;
+        line-height: 90px;
+        span{
+            font-size:14px;
+            display: inline-block;                    
+            margin-right: 10px;
+            color: #45515e;
+        }
+          .pei-span8{
+            width: 80px;
+            height: 20px;
+            background-color: #a09292;
+    //      margin-left: 16px;
+            padding: 5px;
+            line-height: 20px;
+            color:white;
+            text-align: center;
+            vertical-align: text-top;    
+            display: none;   
+        }
+        .pei-span9{
+            display:inline-block;
+            height: 18px;
+            padding: 0 5px;
+            border: 1px solid #a09292;
+            border-radius: 2px;
+            margin-top: 28px;
+            line-height: 18px;
+            color: #a09292;
+            cursor: pointer;
+            display: none;
+        }
+        
+    }
+   
     .xingjia{
         text-decoration: none;
         display: inline-block;
@@ -138,7 +305,7 @@ $color:#45515e;
         background:#45515e url(/img/jsb1.png) no-repeat 15px center;
         color: white;
         position: absolute;
-        top: 50%;
+        top:25px;
         right:10px;
         #zenjia{
             margin-left:30px;
@@ -152,20 +319,71 @@ $color:#45515e;
     height: 96px;
     line-height: 96px;
     border-bottom:1px solid #3C3C3C;
-    .time{
-        
+    position: relative;
+    #shijian{
+        display:inline-block;
+        width: 160px;
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid #b4b4b4;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-right: 30px;
+        line-height: 30px;
+        text-indent: 12px;
+        cursor: pointer;
+        background: url(/img/time.png) no-repeat 120px center;
+    }
+    .time-shijian{
+        position: absolute;
+        top:64px;
+        left:290px;
+        border: 1px solid #b4b4b4;
+        border-top: 0;
+        width: 160px;
+        text-indent:20px;
+        background:white;
+        display: none;
+        cursor: pointer;
+        li{
+            height: 34px;
+            border-bottom: 1px solid #e6e6e6;
+            line-height: 34px;
+            font-size: 14px;
+            &:hover{
+                background: #F02B63;
+                color: white;
+            }
+        }
+    }
+    .time{ 
         color:$color;
-        margin-right: 15px;
-        
+        margin-left:20px;
+  
     }
     .times{
         display:inline-block;
-        width: 150px;
-        height: 30px;
-        border:1px solid;
-        line-height: 30px;
-        text-align: center;
-        margin-left: 210px;    
+        width: 160px;
+        height:34px;
+//      background-color: transparent;
+        border: 1px solid #b4b4b4;
+        line-height:34px;
+        position: relative;
+        cursor: pointer;
+      
+        .time-span1{
+            margin-left:20px;
+        } 
+        .time-span2{
+            display: inline-block;
+            width: 20px;
+            height:20px;
+            position: absolute;
+            top: 6px;
+            right: 5px;
+            z-index: 999;
+            background:url(/img/time2.png) no-repeat 3px center;
+        }  
     }
 }
 //支付方式
