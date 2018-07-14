@@ -151,14 +151,36 @@ require(["config"],function(){
 				}
 				//点击去结算
 				$(".btn-settle").click(function(){
+					const confirm=[];					
+					var checkd=$(".ul1-chcked");
+					var shu=[];
+					$(".ul1-chcked").each(function (index,element) { 
+						var inx=exist($(element).parents(".ul1").data("id"),products);
+						var shuzu=products.splice(inx,1);
+						shu.push(shuzu);
+					 });
 					$.cookie.json=true;
 					var zhanghu=$.cookie("zhanghu");
+					$.cookie("cart",shu,{expires:7,path:"/"});
 					if(zhanghu){
-						location="/html/confirm.html";
+						if(checkd.length===0){
+							$(".zheban").show();
+							$(".popup").show();
+						}else{
+							location="/html/confirm.html";	
+							// console.log(22);
+						}
+						
 					}else{
-						location="/html/login.html";
-					}
+							location="/html/login.html";
+						}
+					// console.log(checkd);
 				});
+				//点击模态框确认关闭模态框
+				$(".popup-queren").click(function () {
+					$(".zheban").hide();
+					$(".popup").hide();
+				  });
 		});
 			
 	});

@@ -18,11 +18,10 @@ require(["config"],function(){
 				const url="http://localhost/wamp/www/dangao/dist/php/chaxun.php";
 				$.post(url,$(".reg_form").serialize(),function(data){
 					console.log(data);
-					if(data.code===1){
+					if(data.res_code===1){
 						$(".cunzai").show();
 						$(".keyi").hide();
-					}
-					else{				
+					}else{				
 						if(/^\w{6,16}$/.test(username)){
 							$(".keyi").show();
 							$(".cunzai").hide();
@@ -75,6 +74,53 @@ require(["config"],function(){
 			}						
 		});
 		
+			//获取验证码的图片
+			function loadCode(){
+				var _url= "http://route.showapi.com/932-2?showapi_appid=29550&showapi_sign=1b9802a551774e3480cb844e18f0ceef";
+				$.ajax({
+					type:"get",
+					url:_url,
+					dataType:"json",
+					success:function(data){
+						var code = data.showapi_res_body;
+						//图片
+						$("#gen_cod").attr("src",code.image);
+						// 保存已生成的验证码标识，以便于后继校验时使用
+						$(".sid").text(code.sid);
+//						console.log(data,code.sid)
+					}
+				});
+			};
+			
+			// 校验有效性
+			$(".a-queren").click(function(){
+				var _input=$("#yanma").val(),
+					_sid=$(".sid").text(),
+					_url= `http://route.showapi.com/932-1?showapi_appid=29550&showapi_sign=1b9802a551774e3480cb844e18f0ceef&sid=${_sid}&checkcode=${_input}`;
+					 $.ajax({			  	
+					  	type:"get",
+					  	url:_url,
+					  	dataType:"json",
+					  	success:function(data){
+					  		if(data.showapi_res_body.valid){
+					  			$(".login-zheban").hide();
+								$(".yanzhengma").hide();
+					  		}else{
+					  			alert("验证码输入错误")
+					  		}
+					  	}
+				  });
+//				  console.log(_input,_sid);
+			});
+			 	
+			//调用函数
+			loadCode();
+			//点击换一张
+			$(".gen-huan").click(function(){
+				loadCode();
+				console.log(22)
+			});	
+
 		//显示遮板验证码	
 		$(".huoqu-dongtai").click(function(){
 			const val=$("#haoma").val();

@@ -2,13 +2,14 @@ require(["config"],function(){
 	require(["jquery","template","laydate","cookie","load"],function($,template,laydate){
 		$(function(){
 				$.cookie.json=true;
-				var products=$.cookie("products")||[];
+				var products=$.cookie("cart");
 				//判断是否有商品
-				if(products.length===0){
-					$(".list-kong").show();	//没有隐藏显示为空		
-				}else{
-					$(".list-kong").hide();
-				}
+				// if(products.length===0){
+				// 	$(".list-kong").show();	//没有隐藏显示为空		
+				// }else{
+				// 	$(".list-kong").hide();
+				// }
+				// console.log(products);
 				//渲染购物车模板
 				const html=template("list-cotent",{products});
 				$(".list-contenr").html(html);
@@ -143,7 +144,7 @@ require(["config"],function(){
 					  			//html字符串
 					  			let html=`<option value='-1'>请选择省份</option>`;
 					  			//将省份数据遍历，加载到option中
-					  			console.log(data1,data2);
+					  			// console.log(data1,data2);
 					  			data1[0].showapi_res_body.data.concat(data2[0].showapi_res_body.data)
 					  					.forEach(function(curr){
 					  						html+= `<option value="${curr.id}">${curr.areaName}</option>`;

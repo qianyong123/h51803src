@@ -208,24 +208,24 @@
 		<script type="text/html" id="list-cotent">
 			{{each products prod}}
 				<ul class="list-ul" data-id="{{prod.id}}">					
-					<li class="li1"><img src="{{prod.img}}" class="conten-img"/></li>
+					<li class="li1"><img src="{{prod[0].img}}" class="conten-img"/></li>
 					<li class="li2">
 						<div class="names">
-							<p class="p1">{{prod.name}}</p>
-							<p class="p2">{{prod.names}}</p>	
+							<p class="p1">{{prod[0].name}}</p>
+							<p class="p2">{{prod[0].names}}</p>	
 						</div>												
 					</li>
 					<li class="li3">
 						<div class="price">
-							<p>{{prod.attr}}/{{prod.zhong}}</p>
-							<p>{{prod.zensong}}</p>
+							<p>{{prod[0].attr}}/{{prod[0].zhong}}</p>
+							<p>{{prod[0].zensong}}</p>
 						</div>
 					</li>					
 					<li class="li4">
-						{{prod.amout}}
+						{{prod[0].amout}}
 					</li>
 					<li class="li5">
-						{{(prod.jiange*prod.amout).toFixed(2)}}
+						{{(prod[0].jiange*prod[0].amout).toFixed(2)}}
 					</li>				
 				</ul>
 			{{/each}}

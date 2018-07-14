@@ -75,6 +75,7 @@
 .list-kong {
   width: 1208px;
   margin: 0 auto;
+  display: none;
 }
 
 .list-kong .list-img {

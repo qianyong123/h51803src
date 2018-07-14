@@ -1,3 +1,52 @@
+.zheban {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #F0F0F0;
+  opacity: 0.8;
+  z-index: 555;
+  display: none;
+  z-index: 999;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  height: 290px;
+  font-size: 20px;
+  margin: -200px 0 0 -222px;
+  display: none;
+  background-color: #fff;
+  border: 2px solid #e9546b;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 0 #e9546b;
+  z-index: 9999;
+}
+
+.popup .popop-pp {
+  text-align: center;
+  height: 60px;
+  padding: 0;
+  margin: 85px auto;
+  line-height: 60px;
+}
+
+.popup .popup-queren {
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: #e9546b;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .gouwu-head {
   width: 1208px;
   margin: 0 auto;
