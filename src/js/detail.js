@@ -122,7 +122,38 @@ require(["config"],function(){
 							display:"none"
 						});
 //						location.reload();
-					});				
+					});	
+					//点击切换商品
+					$(".conter-nav").on("click",".detail-quanbu,.title-zhishi,.title-qiaokeli,.title-napolun,.title-musi,.title-ruzhi,.title-xuanping",function () { 
+						if($(this).is(".detail-quanbu")){
+							// console.log(1);
+							$(".section_group").show();
+						}
+						else if($(this).is(".title-zhishi")){
+							// console.log(2);
+							$(".section_group").hide().siblings(".zhishi").show();
+						}
+						else if($(this).is(".title-qiaokeli")){
+							// console.log(3);
+							$(".section_group").hide().siblings(".qiaokeli").show();
+						}
+						else if($(this).is(".title-napolun")){
+							// console.log(4);
+							$(".section_group").hide().siblings(".napolun").show();
+						}
+						else if($(this).is(".title-musi")){
+							// console.log(5);
+							$(".section_group").hide().siblings(".musi").show();
+						}
+						else if($(this).is(".title-ruzhi")){
+							// console.log(6);
+							$(".section_group").hide().siblings(".ruzhi").show();
+						}
+						else if($(this).is(".title-xuanping")){
+							// console.log(7);
+							$(".section_group").hide().siblings(".xuanping").show();
+						}
+					 });						
 			});				        
      
 		});
