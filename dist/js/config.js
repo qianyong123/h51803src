@@ -9,7 +9,8 @@ require.config({
 		zoom : "lib/jquery-plugins/jquery.elevateZoom-3.0.8.min",
 		load : "js/headandfoot",
 		booststrap:"lib/bootstrap/js/bootstrap.min",
-		laydate:"lib/laydate/laydate"
+		laydate:"lib/laydate/laydate",
+		swiper:"lib/swiper/dist/js/swiper"
 	},
 	shim : {
 		xm_carousel : {

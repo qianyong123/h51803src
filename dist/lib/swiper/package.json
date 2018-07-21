@@ -1,0 +1,151 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "swiper",
+        "scope": null,
+        "escapedName": "swiper",
+        "name": "swiper",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\lianxi\\vue\\lianxivue"
+    ]
+  ],
+  "_from": "swiper@latest",
+  "_id": "swiper@4.3.3",
+  "_inCache": true,
+  "_location": "/swiper",
+  "_nodeVersion": "9.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/swiper_4.3.3_1528208347520_0.39633070003798543"
+  },
+  "_npmUser": {
+    "name": "nolimits4web",
+    "email": "nolimits4web@gmail.com"
+  },
+  "_npmVersion": "5.7.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "swiper",
+    "scope": null,
+    "escapedName": "swiper",
+    "name": "swiper",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/swiper/-/swiper-4.3.3.tgz",
+  "_shasum": "92e39c806ead23a18e5c3251dfba1ae9ce76270e",
+  "_shrinkwrap": null,
+  "_spec": "swiper",
+  "_where": "D:\\lianxi\\vue\\lianxivue",
+  "author": {
+    "name": "Vladimir Kharlampidi"
+  },
+  "browserslist": [
+    "Android > 4",
+    "IOS >= 7",
+    "last 4 versions",
+    "ie >= 10"
+  ],
+  "bugs": {
+    "url": "https://github.com/nolimits4web/Swiper/issues"
+  },
+  "dependencies": {
+    "dom7": "^2.0.6",
+    "ssr-window": "^1.0.0"
+  },
+  "description": "Most modern mobile touch slider and framework with hardware accelerated transitions",
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-connect": "^5.5.0",
+    "gulp-header": "^2.0.5",
+    "gulp-less": "^3.5.0",
+    "gulp-modify-file": "^1.0.1",
+    "gulp-open": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "rollup": "^0.59.3",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-hLjeei+E2EioFUBI4XzqUDkvZu9d6TAOWVFbrCXSrOhY9bzgXYC28dfMRHOs8IgU5WAZ7bbMR8lF706TzKf9nw==",
+    "shasum": "92e39c806ead23a18e5c3251dfba1ae9ce76270e",
+    "tarball": "https://registry.npmjs.org/swiper/-/swiper-4.3.3.tgz",
+    "fileCount": 141,
+    "unpackedSize": 1924643,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbFpvcCRA9TVsSAnZWagAAfnEP/3XeLjE/h1TkrRuhzptY\nTesKwaR9zDlLSVorCNiOVFQBBHL0eEq5I6nlecJR7LHtddsZHf6r5aR6OE3o\nyhPY95ewuPt3qsM45RVUEXIwbsf9TfC9ktVDsLIx86WLQCFByjDA/1Uj8mZV\n8wNncFOOUv3UJj/hwX6SG5fjuOjmcoAjODabFwWI6yuoLDLFn4AOaWVch9a3\ne/PEBo6/DNGw72EjiXDEfy6A05a9TQdT5ASLeIZd/cszOfEsLAq4Ff0guE4c\nWhi+YCtv4eHI37vOofQ2DC2xYvqkPbItAAWuqjLQ1gDFws+heiX+bIMWzkp7\nYryJWOX9Av3j/etjcejjzKOrF2furukCqzVfvTbke1myWBAG33g6M3my3fmU\nQDJtIzF6WGXXBah077Y6I3+JCR2MiLAjG3pSmR7FddVnn/HrcfI6pHHiv/nN\nvD7KqVBPN3p5eRM57xfpcuMnVBN9ZF+99Q7CJR0rTxSQvShd+5JIdl9uXI2L\n9j1+UDsGvtlLBdVSnbvwXHCpN5yC9J7LI9N6y29o95DAu5+zs6SW33RZYX6w\n41c/wuEIcZ+YniaLhLzYtrd7o5BOtGerBQMi5kMC3IHoPLU+PptqBIxBvUH2\nPSVu8BxYb5aJumsUKNaAvlnNZZC9VYXpKV61lXHOc7IV2rjHO/AwVCmIfw2A\nqUey\r\n=KQoH\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "node": ">= 4.7.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "*.json",
+    "*.js"
+  ],
+  "gitHead": "0dcd6cabf4b356dd3126185f288f729913e81aad",
+  "homepage": "http://www.idangero.us/swiper/",
+  "jsnext:main": "dist/js/swiper.esm.bundle.js",
+  "keywords": [
+    "swiper",
+    "swipe",
+    "slider",
+    "touch",
+    "ios",
+    "mobile",
+    "cordova",
+    "phonegap",
+    "app",
+    "framework",
+    "framework7",
+    "carousel",
+    "gallery",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/js/swiper.js",
+  "maintainers": [
+    {
+      "name": "nolimits4web",
+      "email": "nolimits4web@gmail.com"
+    }
+  ],
+  "module": "dist/js/swiper.esm.bundle.js",
+  "name": "swiper",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolimits4web/Swiper.git"
+  },
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development gulp build",
+    "build:prod": "cross-env NODE_ENV=production gulp build",
+    "dev": "cross-env NODE_ENV=development gulp build && cross-env NODE_ENV=development gulp playground && cross-env NODE_ENV=development gulp server",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "postinstall": "node -e \"console.log('\\u001b[35m\\u001b[1mLove Swiper? Support Vladimir\\'s work by donating or pledging on patreon:\\u001b[22m\\u001b[39m\\n > \\u001b[32mhttps://patreon.com/vladimirkharlampidi\\u001b[0m\\n')\"",
+    "prod": "cross-env NODE_ENV=production gulp playground && cross-env NODE_ENV=production gulp server",
+    "test": "npm run lint && npm run build:dev"
+  },
+  "version": "4.3.3"
+}

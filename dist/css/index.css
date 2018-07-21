@@ -77,57 +77,31 @@
   font-weight: 700;
 }
 
-.banner_img {
-  width: 100%;
-  border-bottom: 2px solid #dfe0e2;
-  overflow: hidden;
-  cursor: pointer;
+.swiper-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1920px;
+  height: 680px;
+  margin-left: -960px;
 }
 
-#banner {
+#app {
+  width: 100%;
+  border: 2px solid #ccc;
+}
+
+.box {
   position: relative;
-  z-index: 2;
+  width: 1200px;
   height: 680px;
-  width: 1263px;
   margin: 0 auto;
 }
 
-#banner ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5052px;
-  height: 680px;
-}
-
-#banner ul li {
-  float: left;
-}
-
-#banner ul img {
-  width: 1263px;
-  height: 680px;
-}
-
-#banner #suoying div {
+.swiper-pagination span {
   width: 30px;
-  height: 6px;
-  background: #45515e;
-  float: left;
-  margin: 17px 10px;
-  border: 1px solid;
-  border-radius: 5px;
-}
-
-#banner #suoying {
-  position: absolute;
-  bottom: 0;
-  left: 545px;
-}
-
-#banner #suoying .div2 {
-  background: #e9546b;
-  border: 1px solid #e9546b;
+  height: 8px;
+  border-radius: 8px;
 }
 
 /*特惠展示*/

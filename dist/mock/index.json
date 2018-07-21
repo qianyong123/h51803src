@@ -3,18 +3,29 @@
 	"res_error":"",
 	"res_body": {
 		"list" : [
-					{"id":11,"img":"/img/pic15.jpg","desc":"定格在提卡米苏惑人的浓醇香气中吧！","en":"提拉米苏 ","cn":"Tiramisu","attr":"￥230.00 /1.2磅","jia":230,"gouwu":"/img/tb7.png"},
-					{"id":0,"img":"/img/pic4.jpg","desc":"纯正芝士与醇香奶油的梦幻组合,52折活","en":"爱丁堡之恋","cn":"Love in Edinburgh","attr":"￥120.00 /1.2磅","jia":120,"gouwu":"/img/tb7.png"},
-					{"id":1,"img":"/img/pic5.jpg","desc":"蓝莓优格永远保持一种特别优雅的格调","en":"蓝莓优格","cn":"Blueberry Cheese cake","attr":"￥130.00 /1.2磅","jia":130,"gouwu":"/img/tb7.png"},
-					{"id":2,"img":"/img/pic6.jpg","desc":"火突破巧克力的拥抱，烈焰燃烧。","en":"伦敦之焰 ","cn":"Flame of London","attr":"￥140.00 /1.2磅","jia":140,"gouwu":"/img/tb7.png"},
-					{"id":3,"img":"/img/pic7.jpg","desc":"炎炎夏日的最佳选择。","en":"樱桃冻芝士","cn":"Cherry Cheese cake","attr":"￥150.00 /1.2磅","jia":150,"gouwu":"/img/tb7.png"},
-					{"id":4,"img":"/img/pic8.jpg","desc":"如丝绒般的柔软口感。","en":"至爱红丝绒 ","cn":"Love Red Velvet","attr":"￥160.00 /1.2磅","jia":160,"gouwu":"/img/tb7.png"},
-					{"id":5,"img":"/img/pic9.jpg","desc":"每一口都在辨别那浓滑如丝的滋味","en":"浓情巧克力 ","cn":"Love in Chocolate","attr":"￥170.00 /1.2磅","jia":170,"gouwu":"/img/tb7.png"},
-					{"id":6,"img":"/img/pic10.jpg","desc":"从第一口‘侵略’到最后一口","en":"女王芝士 ","cn":"Queen Cheese cake","attr":"￥180.00 /1.2磅","jia":180,"gouwu":"/img/tb7.png"},
-					{"id":7,"img":"/img/pic11.jpg","desc":"骑士守护森林，守护最甜蜜丝滑的滋味","en":"维也纳骑士 ","cn":"Vienna Knight","attr":"￥190.00 /1.2磅","jia":190,"gouwu":"/img/tb7.png"},
-					{"id":8,"img":"/img/pic12.jpg","desc":"吹拂的风是玛格丽特柔软的芬芳。","en":"玛格丽特 ","cn":"Princess Margaret","attr":"￥200.00 /1.2磅","jia":200,"gouwu":"/img/tb7.png"},
-					{"id":9,"img":"/img/pic13.jpg","desc":"白雪绵绵，芒果酸甜","en":"芒果绵绵雪 ","cn":"Mango Cream Cake","attr":"￥210.00 /1.2磅","jia":210,"gouwu":"/img/tb7.png"},
-					{"id":10,"img":"/img/pic14.jpg","desc":"只留下奶香巧克力化也化不开的醇香","en":"浓情巧克力","cn":"Love in Chocolate","attr":"￥220.00 /1.2磅","jia":220,"gouwu":"/img/tb7.png"}
+					{"class":"zhishi","id":11,"img":"/img/pic15.jpg","desc":"定格在提卡米苏惑人的浓醇香气中吧！","en":"提拉米苏 ","cn":"Tiramisu","attr":"￥230.00 /1.2磅","jia":230,"gouwu":"/img/tb7.png"},
+
+					{"class":"zhishi","id":0,"img":"/img/pic4.jpg","desc":"纯正芝士与醇香奶油的梦幻组合,52折活","en":"爱丁堡之恋","cn":"Love in Edinburgh","attr":"￥120.00 /1.2磅","jia":120,"gouwu":"/img/tb7.png"},
+
+					{"class":"qiaokeli","id":1,"img":"/img/pic5.jpg","desc":"蓝莓优格永远保持一种特别优雅的格调","en":"蓝莓优格","cn":"Blueberry Cheese cake","attr":"￥130.00 /1.2磅","jia":130,"gouwu":"/img/tb7.png"},
+
+					{"class":"napolun","id":2,"img":"/img/pic6.jpg","desc":"火突破巧克力的拥抱，烈焰燃烧。","en":"伦敦之焰 ","cn":"Flame of London","attr":"￥140.00 /1.2磅","jia":140,"gouwu":"/img/tb7.png"},
+
+					{"class":"napolun","id":3,"img":"/img/pic7.jpg","desc":"炎炎夏日的最佳选择。","en":"樱桃冻芝士","cn":"Cherry Cheese cake","attr":"￥150.00 /1.2磅","jia":150,"gouwu":"/img/tb7.png"},
+
+					{"class":"napolun","id":4,"img":"/img/pic8.jpg","desc":"如丝绒般的柔软口感。","en":"至爱红丝绒 ","cn":"Love Red Velvet","attr":"￥160.00 /1.2磅","jia":160,"gouwu":"/img/tb7.png"},
+
+					{"class":"musi","id":5,"img":"/img/pic9.jpg","desc":"每一口都在辨别那浓滑如丝的滋味","en":"浓情巧克力 ","cn":"Love in Chocolate","attr":"￥170.00 /1.2磅","jia":170,"gouwu":"/img/tb7.png"},
+
+					{"class":"musi","id":6,"img":"/img/pic10.jpg","desc":"从第一口‘侵略’到最后一口","en":"女王芝士 ","cn":"Queen Cheese cake","attr":"￥180.00 /1.2磅","jia":180,"gouwu":"/img/tb7.png"},
+
+					{"class":"ruzhi","id":7,"img":"/img/pic11.jpg","desc":"骑士守护森林，守护最甜蜜丝滑的滋味","en":"维也纳骑士 ","cn":"Vienna Knight","attr":"￥190.00 /1.2磅","jia":190,"gouwu":"/img/tb7.png"},
+
+					{"class":"ruzhi","id":8,"img":"/img/pic12.jpg","desc":"吹拂的风是玛格丽特柔软的芬芳。","en":"玛格丽特 ","cn":"Princess Margaret","attr":"￥200.00 /1.2磅","jia":200,"gouwu":"/img/tb7.png"},
+
+					{"class":"xuanping","id":9,"img":"/img/pic13.jpg","desc":"白雪绵绵，芒果酸甜","en":"芒果绵绵雪 ","cn":"Mango Cream Cake","attr":"￥210.00 /1.2磅","jia":210,"gouwu":"/img/tb7.png"},
+
+					{"class":"xuanping","id":10,"img":"/img/pic14.jpg","desc":"只留下奶香巧克力化也化不开的醇香","en":"浓情巧克力","cn":"Love in Chocolate","attr":"￥220.00 /1.2磅","jia":220,"gouwu":"/img/tb7.png"}
 					
 				]	
 			}

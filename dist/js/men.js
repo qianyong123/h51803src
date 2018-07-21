@@ -1,9 +1,9 @@
 require(["config"],function(){
-	require(["jquery","template","load","booststrap","cookie"],function($,template){
+	require(["jquery","template","swiper","load","booststrap","cookie"],function($,template,Swiper){
 		$(function(){
 			$(window).scroll(function () {
 				var aa=$(document).scrollTop();
-				console.log(11,aa);
+				// console.log(11,aa);
 				if(aa>1000){
 					$(".index-fanghui").show();
 				}else{
@@ -150,70 +150,32 @@ require(["config"],function(){
 					$(".popups").on("click",".btn1",function(){				
 						$(".popups").hide();
 						$(".zheban").hide();
-					});				
+					});	
+					//点击提拉米苏跳转到list页面
+					var list=$(".section_group").eq(0).find(".list-img");	
+					// console.log(list);	
+					list.click(function(){
+						location="/html/list.html";
+					});
 			});
-				
-				//banner滑动轮播
-				var lis=$("#banner li"),
-					len=lis.length,
-					wid=lis[0].offsetWidth;
-					currentIndex=0,
-	            	nextIndex=1,
-	            	times=null,
-	            	deration=2000,
-	            	divs=null;
-	//          	console.log(wid)
-	            	//动态添加小圆点
-	            var html="";
-	            	for(var i=0;i<len;i++){
-	            		html+="<div></div>"
-	            	}
-	            	$("#suoying").html(html);//添加进去
-	            	divs=$("#suoying div");
-	//          	console.log(divs);
-	            	$("#suoying div:eq(0)").addClass("div2");//设置第一个小圆点的为红色
-	            $(".ul_li").clone().appendTo("#banner ul");
-	            	
-	            //移动效果
-	            function move(){
-	            	var _left=-1*nextIndex*wid;
-	            	$("#banner ul").animate({left:_left},400,function(){
-	            		if(currentIndex===len){
-	            			currentIndex=0;
-	            			nextIndex=1;
-	            			$("#banner ul").css({
-	            				left:0
-	            			});
-	            		}
-	            		
-	            	});
-	            	var divindex=nextIndex;
-	            	if(divindex>=len)
-	            		divindex=0;
-	            		for(var i=0;i<len;i++){//清除所有索引的颜色
-	            			divs[i].className="";
-	            		}
-	            	divs[divindex].className="div2";//设置索引的类名
-	            	   currentIndex=nextIndex;
-	            		nextIndex++;
-	            }
-	            times=setInterval(move,deration);//自动轮播
-		          // 为每个 div 绑定事件
-				for (let i = 0, len = divs.length; i < len; i++) {
-					divs[i].onclick = function(){
-						nextIndex=i;
-						move();
-					}
-				}	
-				//轮播图移入移出效果
-	            $(".banner_img").hover(function(){
-	            	clearInterval(times);
-//	        	console.log(11);
-	            },function(){
-	              times=setInterval(move,deration);
-//	          console.log(22);
-	            });
-     
+			//轮播图
+			var myswiper=new Swiper(".swiper-container",{
+				loop:true,
+				autoplay:true,
+				effect : 'slide',
+				// setWrapperSize :true,//自动轮播
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el : ".swiper-pagination",
+					clickable :true,
+					// type:"custom"
+				}
+			});
+			
+			// s
 		});
 	});
 });
